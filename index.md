@@ -1,5 +1,5 @@
 ## Navigation
-[About] (https://sethbarberee.github.io/about/)
+[About] (https://sethbarberee.github.io/about.md)
 
 ### Personal repos/projects:
 * [My dotfiles](https://github.com/SethBarberee/dotfiles)
