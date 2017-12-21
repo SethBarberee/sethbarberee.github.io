@@ -1,5 +1,4 @@
-## Navigation
-[About](about.md)
+[Home](/index.md)[About](/about.md)
 
 ### Personal repos/projects:
 * [My dotfiles](https://github.com/SethBarberee/dotfiles)

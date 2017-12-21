@@ -2,4 +2,10 @@ theme: jekyll-theme-cayman
 title: Welcome to my homepage!
 description: Random place on the internet for some random guy's stuff
 permalink: pretty
-navbar: true
+footer-links:
+    email: 
+    github: SethBarberee
+    twitter: s_barberee
+    linkedin:
+    youtube:
+    googleplus:
