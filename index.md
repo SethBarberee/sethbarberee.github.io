@@ -5,7 +5,3 @@
 * [Sway](https://github.com/swaywm/sway)
 * [ckb-next](https://github.com/mattanger/ckb-next)
 * [Neofetch](https://github.com/dylanaraps/neofetch)
-
-## Contact
-[GitHub Profile](https://github.com/SethBarberee)
-
