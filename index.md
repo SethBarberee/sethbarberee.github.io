@@ -1,5 +1,3 @@
-[Home](/index.md)[About](/about.md)
-
 ### Personal repos/projects:
 * [My dotfiles](https://github.com/SethBarberee/dotfiles)
 * [Awesome WM config](https://github.com/SethBarberee/awesome_config)
