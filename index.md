@@ -1,10 +1,11 @@
 ### Personal repos/projects:
 * [My dotfiles](https://github.com/SethBarberee/dotfiles)
 * [Awesome WM config](https://github.com/SethBarberee/awesome_config)
+* [Custom DWM config](https://github.com/SethBarberee/custom-dwm)
 * [CSCE 121](https://github.com/SethBarberee/CSCE-121)
-* [CSCE 222](https://github.com/SethBarberee/CCSE-222)
+* [CSCE 221](https://github.com/SethBarberee/CSCE-221)
 
 ### I contribute to these:
 * [Sway](https://github.com/swaywm/sway)
-* [ckb-next](https://github.com/mattanger/ckb-next)
+* [ckb-next](https://github.com/ckb-next/ckb-next)
 * [Neofetch](https://github.com/dylanaraps/neofetch)
