@@ -47,7 +47,6 @@ Intel and AMD graphics are pretty rad for gaming. Since both are open source
 drivers on Linux, it's nice. The AMD GPU powers off when not in use and can be
 used with DRI_PRIME. Simple and efficient. The way it's supposed to be.
 ## Touchscreen Gestures
-TODO fix this:
 This needed a full on section because of the differences that Linux (Arch) and
 Windows do. In Linux, a one-finger drag is a basically selecting text with the
 left button while on Windows, it scrolls. I hated this in Firefox when I
