@@ -11,6 +11,11 @@ footer-links:
     youtube: channel/UCILpzRw7K9W9aAXp0teW5RA
     googleplus:
 
+disqus:
+    shortname: sethbarberee-github-io
+
+google_analytics: UA-166813180-1
+
 kramdown:
     input: GFM
     syntax_highlighter: rouge
