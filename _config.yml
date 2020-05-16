@@ -20,7 +20,7 @@ jekyll_get:
 disqus:
     shortname: sethbarberee-github-io
 
-paginate: true
+#paginate: true
 #paginate:
 #  collection:   posts
 #  per_page:     10             # maximum number of items per page
