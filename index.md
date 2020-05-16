@@ -3,6 +3,8 @@ layout: page
 title: "Home"
 ---
 
+Hello, world!
+
 ## Personal repos/projects:
 * [My dotfiles](https://github.com/SethBarberee/dotfiles)
 * [Awesome WM config](https://github.com/SethBarberee/awesome_config)
