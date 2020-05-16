@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 
 <article class="post">
@@ -13,9 +12,5 @@ comments: true
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}  
 
 </article>
