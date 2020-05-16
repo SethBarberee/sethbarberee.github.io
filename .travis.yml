@@ -7,5 +7,16 @@ rvm:
 before_script:
   - chmod +x ./script/cibuild
 script: ./script/cibuild
+
+cache: bundler
+
 exclude: [vendor]
 sudo: false
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: _site
+    on:
+        branch: master
