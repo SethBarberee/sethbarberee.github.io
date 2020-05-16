@@ -16,6 +16,8 @@ mkdir _site
 # clone remote repo to "_site"
 git clone https://${GITHUB_TOKEN}@github.com/SethBarberee/sethbarberee.github.io.git --branch master _site
 
+bundle install --full-index
+
 # build with Jekyll into "_site"
 bundle exec jekyll build
 
