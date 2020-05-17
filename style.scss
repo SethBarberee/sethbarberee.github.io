@@ -306,11 +306,17 @@ footer {
 .next {
     position: absolute;
     right: 100px;
+    @include mobile {
+        right: 30px;
+    }
     margin: 15px 0;
 }
 .prev {
     position: absolute;
     left: 100px;
+    @include mobile {
+        left: 30px;
+    }
     margin: 15px 0;
 }
 
