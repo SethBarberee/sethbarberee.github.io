@@ -1,0 +1,31 @@
+---
+layout: page
+title: "Keyboards"
+pagination:
+    enabled: true
+    collection: keyboards
+---
+
+
+I've got quite a few custom keyboards that I have built. Below are a list of the keyboards that I have built with links. Each keyboard links to a page with more info and review of each keyboard.
+
+{% comment %}
+ Generate each keyboard in the collection and link to the page
+{% endcomment %}
+<table>
+<tr>
+    <th>Keyboard</th>
+    <th>Keyswitch</th>
+    <th>Price</th>
+    <th>Pics</th>
+</tr>
+{% for c in site.keyboards %}
+<tr>
+    <td><a href="{{ c.url }}">{{ c.title }}</a></td>
+    <td>{{ c.keyswitch }}</td>
+    <td>{{ c.price }}</td>
+    <td>{{ c.pics }}</td>
+</tr>
+{% endfor %}
+</table>
+
