@@ -302,4 +302,16 @@ footer {
   text-align: center;
 }
 
+// TODO padding to match with rest of the paragraphs
+.next {
+    position: absolute;
+    right: 100px;
+    margin: 15px 0;
+}
+.prev {
+    position: absolute;
+    left: 100px;
+    margin: 15px 0;
+}
+
 @import "svg-icons";
