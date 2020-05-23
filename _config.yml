@@ -17,14 +17,25 @@ jekyll_get:
       json: 'https://api.github.com/users/SethBarberee/repos'
       cache: false
 
+plugins: 
+    - jekyll-paginate-v2
+
 collections:
     keyboards:
         output: true
         permalink: /keyboards/:path/
 
+permalink: /:year/:month/:title.html
+
+# Pagination Settings
 pagination:
   enabled: true
-
+  per_page: 5
+  permalink: '/page/:num/'
+  title_suffix: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 kramdown:
     input: GFM
