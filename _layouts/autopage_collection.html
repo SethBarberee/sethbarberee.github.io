@@ -4,15 +4,13 @@ layout: default
 <!-- Just some nice to have styles for the pager buttons -->
 <style>
   ul.pager { text-align: center; list-style: none; }
-  ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: 5px;}
+  ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: -12px;}
 </style>
 
 <div class="home">
 
-  <h1 class="page-heading">AutoPage Collection <b>{% if page.autopages %}{{page.autopages.display_name}}{% endif %}</b> Page {{page.pagination_info.curr_page}} of {{page.pagination_info.total_pages}}</h1>
+  <h1 class="page-heading"><b>{% if page.autopages %}{{page.autopages.display_name}}{% endif %} Collection</b> Page {{page.pagination_info.curr_page}} of {{page.pagination_info.total_pages}}</h1>
   
-  AUTO CREATED FOR ALL COLLECTIONS IN THE SITE
-
   {{ content | markdownify }}
 
   <ul class="post-list">
@@ -22,10 +20,10 @@ layout: default
     -->
     {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}{% if post.collection %} | {{ post.collection }}{% endif %}{% if post.tags %}<br>Tags: {{ post.tags }}{% endif %}</span>
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}{% if post.collection %} | {{ post.collection }}{% endif %}{% if post.tags %}<br>Tags: {{ post.tags }}{% endif %}</span>
       </li>
     {% endfor %}
   </ul>
@@ -47,7 +45,5 @@ layout: default
       {% endif %}
   </ul>
   {% endif %}
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
