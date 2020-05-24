@@ -24,6 +24,9 @@ collections:
     keyboards:
         output: true
         permalink: /keyboards/:path/
+    anime:
+        output: true
+        permalink: /anime/:path/
 
 permalink: /:year/:month/:title.html
 
@@ -36,6 +39,25 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+
+autopages:
+    enabled: true
+    collections:
+        layouts:
+            - 'autopage_collection.html'
+        title: 'Posts in collection :coll'
+        permalink: '/collection/:coll'
+        slugify:
+            mode: 'default'
+            case: false
+    tags:
+        layouts:
+            - 'autopage_collections_tags.html'
+        title: 'Posts tagged with :tag'
+        permalink: '/tag/:tag'
+        slugify:
+            mode: 'default' # :tag is slugified
+            case: false
 
 kramdown:
     input: GFM

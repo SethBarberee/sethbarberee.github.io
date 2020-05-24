@@ -4,6 +4,7 @@ title: "Zeal60"
 keyswitch: "Zealios"
 price: "$100"
 pics: N/A
+tags: tactile
 ---
 
 ## How did I get it? ##
