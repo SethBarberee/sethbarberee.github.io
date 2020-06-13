@@ -17,6 +17,7 @@ body {
   color: $darkGray;
 }
 
+
 .container {
   margin: 0 auto;
   max-width: 740px;
@@ -318,6 +319,11 @@ footer {
         left: 30px;
     }
     margin: 15px 0;
+}
+
+#img-container img{
+    vertical-align: middle;
+    max-height:100%;
 }
 
 @import "svg-icons";
