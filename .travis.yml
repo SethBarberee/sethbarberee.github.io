@@ -13,7 +13,6 @@ script: ./scripts/cibuild
 cache: bundler
 
 exclude: [vendor]
-sudo: false
 
 deploy:
     provider: pages
