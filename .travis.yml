@@ -12,10 +12,13 @@ script: ./scripts/cibuild
 
 cache: bundler
 
+exclude: [vendor]
+sudo: false
+
 deploy:
     provider: pages
     skip_cleanup: true
-    token: $GITHUB_TOKEN
+    github_token: $GITHUB_TOKEN
     local_dir: _site
     target_branch: master
     on:
