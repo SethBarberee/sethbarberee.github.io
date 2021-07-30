@@ -73,7 +73,7 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
+  margin: auto;
   padding-left: 30px;
 }
 
@@ -303,23 +303,22 @@ footer {
   text-align: center;
 }
 
-// TODO padding to match with rest of the paragraphs
-.next {
-    position: absolute;
-    right: 100px;
-    @include mobile {
-        right: 30px;
-    }
-    margin: 15px 0;
-}
-.prev {
-    position: absolute;
-    left: 100px;
-    @include mobile {
-        left: 30px;
-    }
-    margin: 15px 0;
-}
+// TODO Figure out positioning for these but for now, default to center (since we don't have more than 2 pages yet
+//.next {
+//    position: absolute;
+//    right: 100px;
+//    @include mobile {
+//        right: 30px;
+//    }
+//}
+//.previous {
+//    position: absolute;
+//    left: 100px;
+//    @include mobile {
+//        left: 30px;
+//    }
+//    margin: 15px 0;
+//}
 
 #img-container img{
     vertical-align: middle;
