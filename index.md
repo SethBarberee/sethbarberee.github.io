@@ -14,5 +14,6 @@ Hello, world!
 
 ## I contribute to these:
 * [Sway](https://github.com/swaywm/sway)
+* [Lakka](https://github.com/libretro/Lakka-LibreELEC)
 * [ckb-next](https://github.com/ckb-next/ckb-next)
 * [Neofetch](https://github.com/dylanaraps/neofetch)
