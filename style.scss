@@ -93,6 +93,11 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
+ul.pager, ul.pager li {
+    padding: 10px;
+    margin: 5px;
+}
+
 em, i {
   font-style: italic;
 }
@@ -303,14 +308,26 @@ footer {
   text-align: center;
 }
 
-// TODO Figure out positioning for these but for now, default to center (since we don't have more than 2 pages yet
-//.next {
-//    position: absolute;
-//    right: 100px;
-//    @include mobile {
-//        right: 30px;
-//    }
-//}
+// Used for code formatting
+.highlight {
+  background: $lightGray
+}
+
+
+// Should align non-paginator prev/next buttons to center
+#post-nav {
+    padding-top: 10px;
+    text-align:center;
+}
+
+.next, .prev {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+
 //.previous {
 //    position: absolute;
 //    left: 100px;
