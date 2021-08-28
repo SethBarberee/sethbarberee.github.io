@@ -27,8 +27,8 @@ Red has made some good progress. Here's a status update:
 2878058 bytes of data in 1431 incbins (89.6715%)
 ```
 
-So far, there's some pretty good progress. A recent contribuitor, DenSinH, has
-come along to help with decomping items and Pokemoon. This has allowed me to
+So far, there's some pretty good progress. A recent contributor, DenSinH, has
+come along to help with decomping items and Pokemon. This has allowed me to
 work some more on data and shiftability. As you can see from recent PRs, most
 of the story line dungeons have actually been converted to JSON to allow for
 future tools to read/edit it. PoryDungeon when?
