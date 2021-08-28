@@ -3,7 +3,7 @@ layout: page
 title: "Home"
 ---
 
-Hello, world!
+Home Page for this corner of the internet. 
 
 ## Personal repos/projects:
 * [Azur Lane Sorter](https://github.com/SethBarberee/AzurLaneSorter)
@@ -13,7 +13,6 @@ Hello, world!
 * [Arduino/BeagleBone Based Alexa](https://github.com/ssnatarajn98/TamuMake)
 
 ## I contribute to these:
-* [Sway](https://github.com/swaywm/sway)
+* [PMD-Red](https://github.com/pret/pmd-red)
 * [Lakka](https://github.com/libretro/Lakka-LibreELEC)
 * [ckb-next](https://github.com/ckb-next/ckb-next)
-* [Neofetch](https://github.com/dylanaraps/neofetch)

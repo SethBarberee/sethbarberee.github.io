@@ -21,9 +21,15 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <h2>
+            <!-- 
+                Title of each blog post with link
+            -->
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}</span>
+        <!-- 
+            Date of each blog post
+        -->
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
