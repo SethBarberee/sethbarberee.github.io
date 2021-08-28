@@ -1,9 +1,5 @@
 ---
 layout: default
-pagination:
-  enabled: true
-  collection: anime
-  debug: false
 ---
 <!-- Just some nice to have styles for the pager buttons -->
 <style>
@@ -13,9 +9,9 @@ pagination:
 
 <div class="home">
 
-    <h1 class="page-heading">Anime Corner</b> <br>Page {{page.pagination_info.curr_page}} of {{page.pagination_info.total_pages}}</h1>
+  <h1 class="page-heading"><b>{% if page.autopages %}{{page.autopages.display_name}}{% endif %} Collection</b> Page {{page.pagination_info.curr_page}} of {{page.pagination_info.total_pages}}</h1>
   
-  Round up of all reviews that I have done for animes that I have watched.
+  {{ content | markdownify }}
 
   <ul class="post-list">
     <!-- 
@@ -27,7 +23,7 @@ pagination:
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags %}<br>Tags: {{ post.tags }}{% endif %}</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}</span>
       </li>
     {% endfor %}
   </ul>
@@ -49,6 +45,5 @@ pagination:
       {% endif %}
   </ul>
   {% endif %}
-
 
 </div>
