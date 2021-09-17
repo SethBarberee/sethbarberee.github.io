@@ -8,4 +8,7 @@ tags: clicky
 ---
 
 ## How did I get it? ##
-To be written
+Somehow ended up on the group buy for this keyboard and got the PCB. I finally
+soldered this together at TamuMake Hackathon. However, I scuffed the TRRS
+soldering and probably messed up a pro micro pin as not all keys work. Still
+need to perform surgery to make this work.
