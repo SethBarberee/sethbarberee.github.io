@@ -4,7 +4,7 @@ title: Messin with CI
 date: 2020-05-17
 ---
 
-Now that I got Travis CI set up, I can actually use other plugins that Github
+Now that I got Travis CI set up, I can actually use other plugins that GitHub
 Pages doesn't support, like paginate-v2. Can't wait to try them out but it was
 a headache since I didn't know how Travis CI works. Luckily YAML and
 documentation isn't too hard to figure out. I did find some blog posts around

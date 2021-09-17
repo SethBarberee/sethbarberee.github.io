@@ -6,7 +6,7 @@ date: 2021-02-21
 
 
 Huh, I haven't really posted much on this blog. It's been almost a year since
-the last post. Since then, I got my degree in Computer Engineeering (mailed to
+the last post. Since then, I got my degree in Computer Engineering (mailed to
 me, of course because of COVID) and I'm settling into my job in California.
 I've almost finished up my first year in my Test Engineering position and will
 rotate in June to a new position for a year. I don't have an idea what it will
