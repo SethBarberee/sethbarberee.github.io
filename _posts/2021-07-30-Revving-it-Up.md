@@ -10,7 +10,7 @@ moving it from Travis to Github Actions. Turned out nicely and I don't have to
 worry about dumb credits. Work has been relentless in keeping me busy but PMD:
 Red has made some good progress. Here's a status update:
 
-```
+```c
 725060 total bytes of code
 118544 bytes of code in src (16.3495%)
 606516 bytes of code in asm (83.6505%)
