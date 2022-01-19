@@ -1,0 +1,86 @@
+navbar_entries:
+  - title: about
+    url: about
+
+  - title: blog
+    url: blog
+
+  - title: projects
+    url: projects
+
+  - title: website
+    url: https://sethbarberee.github.io
+
+
+project_entries:
+  - title: Azur Lane Sorter
+    url: https://github.com/SethBarberee/AzurLaneSorter
+    desc: PyQT GUI that tries to create the best fleet given a txt list
+
+  - title: Dotfiles
+    url: https://github.com/SethBarberee/dotfiles
+    desc: Config files for most programs that I use
+
+  - title: pmd-red
+    url: https://github.com/pret/pmd-red
+    desc: Decompilation of Pokemon Mystery Dungeon Red Rescue Team
+
+  - title: Website
+    url: https://github.com/SethBarberee/sethbarberee.github.io
+    desc: This website's git repo
+
+old_project_entries:
+  - title: Arduino/Beaglebone Based Alexa
+    url: https://github.com/ssnatarajn98/TamuMake
+    desc: Basic Alexa clone with Arduino/BeagleBone
+
+  - title: AwesomeWM Config
+    url: https://github.com/SethBarberee/awesome_config
+    desc: My old AwesomeWM config
+
+footer_entries:
+  - title: Seth's homepage
+    url: https://sethbarberee.github.io
+
+  - title: twitter
+    url: https://twitter.com/s_barbere
+
+  - title: github
+    url: https://github.com/SethBarberee
+
+  - title: feed
+    url: feed.xml
+
+misc_entries:
+  - title: this is an example vertical list
+    url: false
+
+  - title: you can show or hide using a boolean flag in _config.yml
+    url: false
+
+  - title: and you can add data in _data/home.yml
+    url: false
+
+  - title: Blog posts
+    post_list: true
+    url: false
+
+  - title: moonwalk on the Internet
+    url: false
+    entries:
+      - title: on Github
+        url: https://github.com/abhinavs/moonwalk
+
+      - title: originally built for abhinav's homepage
+        url: https://www.abhinav.co
+
+      - title: this list is scalable and can be nested
+        url: false
+        entries:
+          - title: this is nested inside a nested list
+            url: false
+
+          - title: it is easy to use, see _data/home.yml to see how to configure it.
+            url: false
+
+

@@ -1,15 +1,9 @@
-name: Seth Barberee
-avatar: https://pbs.twimg.com/profile_images/901262532979064832/wCQqNS5j.jpg
-title: Welcome to my homepage!
+title: Seth Barberee
+author: Seth Barberee
+url: https://www.abhinavsaxena.com/moonwalk # root address of the site
 description: Random place on the internet for some random guy's stuff
-permalink: pretty
-footer-links:
-    email: seth.barberee@gmail.com 
-    github: SethBarberee
-    twitter: s_barberee
-    linkedin: seth-barberee-008023155
-    youtube: channel/UCILpzRw7K9W9aAXp0teW5RA
-    googleplus:
+
+permalink: /:slug.html
 
 plugins_dir: ./_plugins
 jekyll_get:
@@ -17,50 +11,44 @@ jekyll_get:
       json: 'https://api.github.com/users/SethBarberee/repos'
       cache: false
 
-plugins: 
-    - jekyll-paginate-v2
+plugins:
+  - jekyll-feed
+  - jekyll-soopr-seo-tag
 
-collections:
-    keyboards:
-        output: true
-        permalink: /keyboards/:path/
-    anime:
-        output: true
-        permalink: /anime/:path/
+favicon: "./logo.png" # relative path to site's favicon
 
-permalink: /:year/:month/:title.html
+twitter:
+    username: s_barberee # update or delete this
+    card: summary_large_image
 
-# Pagination Settings
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
+#theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
+remote_theme: abhinavs/moonwalk
 
-autopages:
-    enabled: true
-    collections:
-        layouts:
-            - 'autopage_collection.html'
-        title: 'Posts in collection :coll'
-        permalink: '/collection/:coll'
-        slugify:
-            mode: 'default'
-            case: false
-    tags:
-        layouts:
-            - 'autopage_collections_tags.html'
-        title: 'Posts tagged with :tag'
-        permalink: '/tag/:tag'
-        slugify:
-            mode: 'default' # :tag is slugified
-            case: false
+theme_config:
+  appearance: "dark" # can be "light", "dark" or "auto"
+  appearance_toggle: true # if appearance can be switched by user
+  back_home_text: "home.." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description
+  show_navbar: true # show horizontal navbar
+  show_footer: true # show footer links in home page,add in _data/home.yml
+  show_copyright: true # show copyright notice in footer
+  # following keys are using to create home layout
+  show_projects: true # show projects as cards, add in _data/home.yml
+  show_blog: true # show blog posts added in _posts
+  show_old_projects: true # show old projects as cards, add in _data/home.yml
+  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
+  # options for "home" page
+  home:
+    title_projects: Portfolio
+    title_misc_list: Details
+    title_blog: Blog
+    title_old_projects: Old Projects
 
-kramdown:
-    input: GFM
-    syntax_highlighter: rouge
+soopr:
+  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+
+highlighter: rouge
+
 sass:
-    style: :compressed
+  style: :compressed

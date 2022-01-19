@@ -1,55 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
+<html lang="{{ page.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "auto" }}">
+        {%- include head.html -%}
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico?" type="image/x-icon">
-          <link rel="icon" href="{{ site.baseurl }}/favicon.ico?" type="image/x-icon">
-
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/blog">Blog</a>
-            <a href="{{ site.baseurl }}/keyboards">Keyboards</a>
-            <a href="{{ site.baseurl }}/projects">Projects</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        {{ content }}
+        {% if site.theme_config.appearance_toggle %}
+          {% include toggle_theme_button.html %}
+        {% endif %}
+        <div class="credits">
+          {%- if site.theme_config.show_copyright == true -%}
+          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
+          &nbsp;
+          •
+          &nbsp;
+          {%- endif -%}
+          {%- if site.soopr -%}
+          Powered by <a href="https://www.soopr.co" target="_blank" rel="noreferrer">Soopr</a>
+          &nbsp;
+          •
+          &nbsp;
+          {%- endif -%}
+          Theme&nbsp; <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noreferrer">Moonwalk</a>
+        </div>
       </div>
-    </div>
+    </main>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    {%- if site.soopr -%}
+      {%- if site.soopr.publish_token and jekyll.environment == "production" -%}
+        <script async defer data-soopr-token="{{site.soopr.publish_token}}" src="https://sdk.soopr.co/soopr.js"></script>
+      {%- else -%}
+        <script async defer src="https://sdk.soopr.co/soopr.js"></script>
+      {%- endif -%}
+    {%- endif -%}
   </body>
 </html>

@@ -1,7 +1,7 @@
-source 'https://rubygems.org'
-gem "jekyll"
+# frozen_string_literal: true
+
+source "https://rubygems.org"
 gem "json"
 gem "hash-joiner"
-gem "jekyll-paginate-v2"
 
-gem "webrick", "~> 1.7"
+gemspec
