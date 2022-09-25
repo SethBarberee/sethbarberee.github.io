@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.abhinavsaxena.com/moonwalk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.abhinavsaxena.com/moonwalk/" rel="alternate" type="text/html" /><updated>2022-01-19T06:45:15+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Another Year, Still a Pandemic</title><link href="https://www.abhinavsaxena.com/moonwalk/another-year-still-a-pandemic.html" rel="alternate" type="text/html" title="Another Year, Still a Pandemic" /><published>2022-01-01T00:00:00+00:00</published><updated>2022-01-01T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/Another-Year,-Still-a-Pandemic</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/another-year-still-a-pandemic.html">&lt;p&gt;Currently in the terminal here at Love Field, with my mask on my face. I’ve
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://www.abhinavsaxena.com/moonwalk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.abhinavsaxena.com/moonwalk/" rel="alternate" type="text/html" /><updated>2022-09-25T16:34:13+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Jamming to a New Beat</title><link href="https://www.abhinavsaxena.com/moonwalk/jamming-to-a-new-beat.html" rel="alternate" type="text/html" title="Jamming to a New Beat" /><published>2022-02-03T00:00:00+00:00</published><updated>2022-02-03T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/Jamming-to-a-New-Beat</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/jamming-to-a-new-beat.html">&lt;p&gt;I’m not a stranger to music. I’ve listened to music for most of my life and
+even played it for a few years during the middle school to high school years.
+I have a &lt;strong&gt;very&lt;/strong&gt; large play time on Spotify because I listen almost every
+second. When I’m home, I also listen to music on the side or when working from
+home. In addition, I have a decent collection of music locally on my desktop
+that I like to play on occasion. I do pay for Spotify Premium and will
+probably continue to pay for it in the near future however I wanted to do
+something different on my desktop. Spotify on Linux can be a little memory hog
+(thanks Electron) and every now and then, I spin up MPD to listen to my local
+music selection. I had seen articles/blog posts from other people about how
+they can stream Spotify from the terminal but I never tried it myself.&lt;/p&gt;
+
+&lt;p&gt;Enter Mopidy. Mopidy is a MPD equivalent that is extensible with Python
+plugins. The capability for Spotify is one of those plugins. By default,
+Mopidy only uses your local Music (on par with MPD). Once you
+install/configure other plugins, you can add more functionality. For now, I’ve
+settled on the following for my Mopidy install:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mopidy - Local (locally installed music)&lt;/li&gt;
+  &lt;li&gt;Mopidy - MPRIS (MPRIS Control in KDE and other environments)&lt;/li&gt;
+  &lt;li&gt;Mopidy - Spotify (Spotify playback)&lt;/li&gt;
+  &lt;li&gt;Mopidy - YTMusic (YouTube Music playback)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For me, this is a nice, little setup as I can control everything from the KDE
+panel or my media buttons. In addition, I gain YouTube Music functionality.
+Albeit, there are still some bugs with YTMusic, in respect to certain songs,
+but it doesn’t detract from the rest of my positive experience. I can mix
+different sources with ease and enjoy my music the way I want to. It’s times
+like these that remind me why I enjoy running Linux. I can easily find an
+alternative and after a little bit of time, I’ve got something equal or
+possibly better.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">I’m not a stranger to music. I’ve listened to music for most of my life and even played it for a few years during the middle school to high school years. I have a very large play time on Spotify because I listen almost every second. When I’m home, I also listen to music on the side or when working from home. In addition, I have a decent collection of music locally on my desktop that I like to play on occasion. I do pay for Spotify Premium and will probably continue to pay for it in the near future however I wanted to do something different on my desktop. Spotify on Linux can be a little memory hog (thanks Electron) and every now and then, I spin up MPD to listen to my local music selection. I had seen articles/blog posts from other people about how they can stream Spotify from the terminal but I never tried it myself.</summary></entry><entry><title type="html">Another Year, Still a Pandemic</title><link href="https://www.abhinavsaxena.com/moonwalk/another-year-still-a-pandemic.html" rel="alternate" type="text/html" title="Another Year, Still a Pandemic" /><published>2022-01-01T00:00:00+00:00</published><updated>2022-01-01T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/Another-Year,-Still-a-Pandemic</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/another-year-still-a-pandemic.html">&lt;p&gt;Currently in the terminal here at Love Field, with my mask on my face. I’ve
 had an hour and a half delay so figured I should probably write one of these
 since it’s been a while. My job has kept me busy but that doesn’t mean that
 any of my projects are on the backburner. PMD-Red has been pretty steady the
@@ -215,71 +247,4 @@ hardware, I could easily work on it during TamuMake in February.&lt;/p&gt;
 
 &lt;p&gt;Well, guess I better end this one. Life is changing and flipping another page
 of my life is getting closer and closer. I’m not ready at all but I guess
-that’s the fun.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">I can’t believe how fast 4 years has flown by here at Texas A&amp;amp;M. It seemed like I just came here in 2016 and now, I’m trying to figure out my career and house (hello California). The change is definitely scary but hey, it’ll be fine (hehe right??). I made it through 16 credit hours and part of my sanity needed a funeral but it’ll be back in the spring. I’ve got 13 hours to close out my college career. Soon, I’ll do my fall evaluation for my senior resident advisor position and close the dorms for winter break.</summary></entry><entry><title type="html">New Laptop, New Horizons (XPS 15 9575)</title><link href="https://www.abhinavsaxena.com/moonwalk/new-laptop-new-horizons.html" rel="alternate" type="text/html" title="New Laptop, New Horizons (XPS 15 9575)" /><published>2019-07-23T00:00:00+00:00</published><updated>2019-07-23T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/new-laptop-new-horizons</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/new-laptop-new-horizons.html">&lt;p&gt;Written on said XPS 15 9575&lt;/p&gt;
-
-&lt;p&gt;As my time at internship with Dell comes to a close, I’ve been in the market
-for a new laptop to replace my older Dell Precision 5510. My shopping list or
-with list was the following:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Better battery life&lt;/li&gt;
-  &lt;li&gt;Touchscreen of some fashion&lt;/li&gt;
-  &lt;li&gt;Please no more NVIDIA graphics&lt;/li&gt;
-  &lt;li&gt;15” screen or smaller&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
-&lt;p&gt;So lemme explain, my Dell Precision gets about 3 1/2 hours of battery life.
-That’s not too bad but in the world of ultrabooks and how on the go I am, I
-want to have something with better battery life. Touchscreen came from a
-little part of me that just wants to take notes kinda like a Surface laptop
-and replace my old and basically broken Samsung Tab A. My last item came from
-my constant work on Wayland testing and just dealing with hybrid graphics.
-NVIDIA is a great company with good products however on the Linux side,
-supporting Wayland isn’t on their highest priority and the Quadro M1000M of
-mine could never boost since NVIDIA never released the signed firmwares for
-them. With my laptop beginning to hit 3 years old and my current internship at
-Dell, I wanted to take advantage of a good deal on a new laptop.&lt;/p&gt;
-&lt;h1 id=&quot;scouting&quot;&gt;Scouting&lt;/h1&gt;
-&lt;p&gt;Luckily, I had an employee discount and I don’t mind buying refurbished. My
-scope was narrowed very quickly to the XPS/Latitudes of Dell. I wanted good
-support on Linux which then narrowed to the XPS. Then, I settled on the 15”
-after trying it in the lab and pulled the trigger.&lt;/p&gt;
-&lt;h1 id=&quot;review&quot;&gt;Review&lt;/h1&gt;
-&lt;p&gt;I’ve broken down each part of the laptop review to sections labeled below.&lt;/p&gt;
-&lt;h2 id=&quot;linux-driver-support&quot;&gt;Linux Driver Support&lt;/h2&gt;
-&lt;p&gt;Most things work out of the box. Not any problems to speak of. From the Arch
-wiki, the only thing that doesn’t really have a driver is the fingerprint
-reader but I don’t really use/need it. The only thing that will bug me at
-times is when the touchpad might be disabled after flipping between tablet and
-laptop mode but I usually just do a full cycle switch between the two and it
-usually fixes itself.&lt;/p&gt;
-&lt;h2 id=&quot;screen&quot;&gt;Screen&lt;/h2&gt;
-&lt;p&gt;It’s glossy and 1080P. Bring on the fingerprints from touch. I did buy a Pen with the
-laptop to slightly mitigate this.&lt;/p&gt;
-&lt;h2 id=&quot;graphics&quot;&gt;Graphics&lt;/h2&gt;
-&lt;p&gt;Intel and AMD graphics are pretty rad for gaming. Since both are open source
-drivers on Linux, it’s nice. The AMD GPU powers off when not in use and can be
-used with DRI_PRIME. Simple and efficient. The way it’s supposed to be.&lt;/p&gt;
-&lt;h2 id=&quot;touchscreen-gestures&quot;&gt;Touchscreen Gestures&lt;/h2&gt;
-&lt;p&gt;This needed a full on section because of the differences that Linux (Arch) and
-Windows do. In Linux, a one-finger drag is a basically selecting text with the
-left button while on Windows, it scrolls. I hated this in Firefox when I
-wanted to scroll with one finger in Linux and can’t. I ended up installing
-ScrollAnywhere (Firefox Extension) to solve the issue and now I can basically
-scroll like I do in Windows.&lt;/p&gt;
-&lt;h2 id=&quot;battery-life&quot;&gt;Battery Life&lt;/h2&gt;
-&lt;p&gt;For reference with my Precision, I would have to charge at least once per day
-during one of my classes (typically 45 mins). With the XPS, I charge about
-every other day depending on how much I actually need it. Some days are more
-heavy than others like Mondays while others I don’t really need it such as
-my Tuesday classes. From my own testing, I typically get 6 hours and sometimes
-better depending on what work I’m actually doing.&lt;/p&gt;
-&lt;h2 id=&quot;on-screen-keyboard&quot;&gt;On Screen Keyboard&lt;/h2&gt;
-&lt;p&gt;With having a convertible laptop, a big issue is on-screen keyboards. Desktop
-environments have their own keyboards or have one that is extremely integrated
-to only that environment. With using LightDM, I already had onboard installed
-so I tried using that. With it running in the background in docked mode, it
-works really well especially in AwesomeWM. Currently, I have it set to
-auto-hide when I type and show when it detects that it needs text input. An
-example is when I open a new tab and onboard will popup to input. However, it
-only shows when I’m in tablet mode. Great job, onboard folks.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">Written on said XPS 15 9575</summary></entry></feed>
+that’s the fun.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">I can’t believe how fast 4 years has flown by here at Texas A&amp;amp;M. It seemed like I just came here in 2016 and now, I’m trying to figure out my career and house (hello California). The change is definitely scary but hey, it’ll be fine (hehe right??). I made it through 16 credit hours and part of my sanity needed a funeral but it’ll be back in the spring. I’ve got 13 hours to close out my college career. Soon, I’ll do my fall evaluation for my senior resident advisor position and close the dorms for winter break.</summary></entry></feed>
