@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://www.abhinavsaxena.com/moonwalk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.abhinavsaxena.com/moonwalk/" rel="alternate" type="text/html" /><updated>2022-11-14T17:07:31+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Jamming to a New Beat</title><link href="https://www.abhinavsaxena.com/moonwalk/jamming-to-a-new-beat" rel="alternate" type="text/html" title="Jamming to a New Beat" /><published>2022-02-03T00:00:00+00:00</published><updated>2022-02-03T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/Jamming-to-a-New-Beat</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/jamming-to-a-new-beat">&lt;p&gt;I’m not a stranger to music. I’ve listened to music for most of my life and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://www.abhinavsaxena.com/moonwalk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.abhinavsaxena.com/moonwalk/" rel="alternate" type="text/html" /><updated>2022-11-14T17:38:01+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">We keep keeping on</title><link href="https://www.abhinavsaxena.com/moonwalk/we-keep-keeping-on" rel="alternate" type="text/html" title="We keep keeping on" /><published>2022-11-14T00:00:00+00:00</published><updated>2022-11-14T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/We-keep-keeping-on</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/we-keep-keeping-on">&lt;p&gt;Time flies, huh? My last post was… 9 months ago?! Jeez. Maybe I should set
+an alarm/reminder to make sure I write these. Anyway, I’ve been all over the
+place.&lt;/p&gt;
+
+&lt;h2 id=&quot;pmd-red-progress&quot;&gt;PMD Red Progress&lt;/h2&gt;
+&lt;p&gt;pmd-red has been doing great and progress continues. Here’s the current
+status:&lt;/p&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;725060&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;246992&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;34&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;0650&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;478068&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asm&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;65&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9350&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;14930&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symbols&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;6915&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symbols&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;documented&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;46&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3161&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;313&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symbols&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;partially&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;documented&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0965&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;7702&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symbols&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;undocumented&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;51&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5874&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;32059294&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;51833&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1617&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;32007461&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;99&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8383&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;85658061&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bytes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3264&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;incbins&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;267&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1864&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;That’s more than a third of the game that has been decompiled and almost half
+of it has been documented. Of course, I’m not doing this alone. Many people
+have been contributing too.&lt;/p&gt;
+
+&lt;h2 id=&quot;tree-sitter-asm&quot;&gt;tree-sitter-asm&lt;/h2&gt;
+&lt;p&gt;If you have checked my GitHub profile recently, you may have seen that I’ve
+been working on a tree-sitter parser of my own. Given that I stare at lines of
+ARM/THUMB code for hours and hours (when I’m not at work, of course), I wanted
+to see if I could make my experience better. Within one weekend, I had a
+basic prototype that worked pretty well. There are bugs of course but it looks
+great!&lt;/p&gt;
+
+&lt;div id=&quot;img-container&quot;&gt;
+&lt;img src=&quot;/assets/tree-sitter-asm.png&quot; alt=&quot;Normal Vim syntax on Left and tree-sitter-asm on the Right&quot; /&gt;  
+&lt;center&gt;&lt;span class=&quot;caption&quot;&gt;Normal Vim syntax on Left and tree-sitter-asm on the Right&lt;/span&gt;&lt;/center&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- Mainly to create a line break --&gt;&lt;/p&gt;
+
+&lt;p&gt;Is it ready to include in the nvim-treesitter repo? Probably not. However, I
+use it daily and enjoy that I created it.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><category term="pmd-red" /><category term="tree-sitter-asm" /><summary type="html">Time flies, huh? My last post was… 9 months ago?! Jeez. Maybe I should set an alarm/reminder to make sure I write these. Anyway, I’ve been all over the place.</summary></entry><entry><title type="html">Jamming to a New Beat</title><link href="https://www.abhinavsaxena.com/moonwalk/jamming-to-a-new-beat" rel="alternate" type="text/html" title="Jamming to a New Beat" /><published>2022-02-03T00:00:00+00:00</published><updated>2022-02-03T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/Jamming-to-a-New-Beat</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/jamming-to-a-new-beat">&lt;p&gt;I’m not a stranger to music. I’ve listened to music for most of my life and
 even played it for a few years during the middle school to high school years.
 I have a &lt;strong&gt;very&lt;/strong&gt; large play time on Spotify because I listen almost every
 second. When I’m home, I also listen to music on the side or when working from
@@ -223,28 +266,4 @@ to see how &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ca
 for apartments which was fun until dealing with the aftermath of COVID-19.
 California is fun from what I’ve seen so far. Let’s hope it stays that way
 when I get there for good in 2 months. Besides that, I’m taking it one day at
-a time. See ya on the other side.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">Well, now that I am settling into the quarantine of COVID-19, I guess I should catch up on what is going on with me right now. Besides trying to adjust to the rest of my semester and basically college career now online, I’ve been trying to do other things. I’ve been contributing a lot more to AwesomeWM. I helped convert the hotkeys_popup to awful.popup instead of the popup doing the drawing itself. Pretty cool, I must say. After that, doing some research to see how calendar_popup can convert to it. We’ll see, eh.</summary></entry><entry><title type="html">Changing Chapters</title><link href="https://www.abhinavsaxena.com/moonwalk/changing-chapters" rel="alternate" type="text/html" title="Changing Chapters" /><published>2019-12-15T00:00:00+00:00</published><updated>2019-12-15T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/changing-chapters</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/changing-chapters">&lt;p&gt;I can’t believe how fast 4 years has flown by here at Texas A&amp;amp;M. It seemed
-like I just came here in 2016 and now, I’m trying to figure out my career and
-house (hello California). The change is definitely scary but hey, it’ll be
-fine (hehe right??). I made it through 16 credit hours and part of my sanity
-needed a funeral but it’ll be back in the spring. I’ve got 13 hours to close
-out my college career. Soon, I’ll do my fall evaluation for my senior resident
-advisor position and close the dorms for winter break.&lt;/p&gt;
-
-&lt;p&gt;In other news, I’ve been delving down my emulator hole again. With my 2-in-1,
-DS gaming is a lot easier as I’ve been playing a lot of Pokemon Black 2 and
-White 2. DS gaming is very interesting how far it’s come. While sound still
-isn’t the best, graphics is very smooth and plays very well.&lt;/p&gt;
-
-&lt;p&gt;Besides getting my life together, I’ve been trying to get into personal
-projects again. I have a mix of software/hardware hacks to work on for the
-semester. One was understanding the backbone of this website skeleton that I
-borrowed from another site. I suck at frontend stuff like this so I decided to
-use someone else’s. Copying a form of flattery, eh. My hardware plan of a
-portable GameBoy emulator is coming along. Turns out a shell of one with
-buttons is only like $8.50 on eBay. If I order that with my other planned
-hardware, I could easily work on it during TamuMake in February.&lt;/p&gt;
-
-&lt;p&gt;Well, guess I better end this one. Life is changing and flipping another page
-of my life is getting closer and closer. I’m not ready at all but I guess
-that’s the fun.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">I can’t believe how fast 4 years has flown by here at Texas A&amp;amp;M. It seemed like I just came here in 2016 and now, I’m trying to figure out my career and house (hello California). The change is definitely scary but hey, it’ll be fine (hehe right??). I made it through 16 credit hours and part of my sanity needed a funeral but it’ll be back in the spring. I’ve got 13 hours to close out my college career. Soon, I’ll do my fall evaluation for my senior resident advisor position and close the dorms for winter break.</summary></entry></feed>
+a time. See ya on the other side.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">Well, now that I am settling into the quarantine of COVID-19, I guess I should catch up on what is going on with me right now. Besides trying to adjust to the rest of my semester and basically college career now online, I’ve been trying to do other things. I’ve been contributing a lot more to AwesomeWM. I helped convert the hotkeys_popup to awful.popup instead of the popup doing the drawing itself. Pretty cool, I must say. After that, doing some research to see how calendar_popup can convert to it. We’ll see, eh.</summary></entry></feed>
