@@ -13,4 +13,5 @@ echo "---" >> $NEW_POST
 echo "layout: post" >> $NEW_POST
 echo "title: "$TITLE"" >> $NEW_POST
 echo "date: $DATE" >> $NEW_POST
+echo "tags: []" >> $NEW_POST
 echo "---" >> $NEW_POST
