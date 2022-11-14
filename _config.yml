@@ -3,7 +3,7 @@ author: Seth Barberee
 url: https://www.abhinavsaxena.com/moonwalk # root address of the site
 description: Random place on the internet for some random guy's stuff
 
-permalink: /:slug.html
+permalink: /:slug
 
 plugins_dir: ./_plugins
 jekyll_get:
@@ -38,6 +38,8 @@ theme_config:
   show_blog: true # show blog posts added in _posts
   show_old_projects: true # show old projects as cards, add in _data/home.yml
   show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
+  show_reading_time: false # show number of words and reading time in the blog posts
+  show_tags: true # show tags in a blog posts
   # options for "home" page
   home:
     title_projects: Portfolio
