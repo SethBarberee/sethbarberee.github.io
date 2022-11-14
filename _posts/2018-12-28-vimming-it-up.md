@@ -2,6 +2,7 @@
 layout: post
 title: "Vimming it up"
 date: 2018-12-28
+tags: [vim]
 ---
 So Christmas break is happening right now and I don't have classes to worry
 about. That's amazing that I don't have to be frantically coding some random

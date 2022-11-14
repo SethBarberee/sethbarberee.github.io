@@ -2,6 +2,7 @@
 layout: post
 title: "New Laptop, New Horizons (XPS 15 9575)"
 date: 2019-07-23
+tags: [laptop]
 ---
 Written on said XPS 15 9575
 

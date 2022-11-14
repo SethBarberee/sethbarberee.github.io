@@ -2,6 +2,7 @@
 layout: post
 title: Hacking in Disassembly
 date: 2020-06-12
+tags: [pokeemerald, pokefirered]
 ---
 
 It's been a fun time this summer. I've been messing with the disassemblies of

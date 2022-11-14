@@ -2,6 +2,7 @@
 layout: post
 title: Jamming to a New Beat
 date: 2022-02-03
+tags: [mpd, mopidy]
 ---
 
 I'm not a stranger to music. I've listened to music for most of my life and
