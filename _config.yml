@@ -15,7 +15,7 @@ plugins:
   - jekyll-feed
   - jekyll-soopr-seo-tag
 
-favicon: "./logo.png" # relative path to site's favicon
+favicon: "favicon.ico" # relative path to site's favicon
 
 twitter:
     username: s_barberee # update or delete this
