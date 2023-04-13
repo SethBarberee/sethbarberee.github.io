@@ -24,6 +24,10 @@ project_entries:
   - title: pmd-red
     url: https://github.com/pret/pmd-red
     desc: Decompilation of Pokemon Mystery Dungeon Red Rescue Team
+    
+    - title: challenger-deep.nvim
+    url: https://github.com/SethBarberee/challenger-deep.nvim
+    desc: Fork of challenger-deep/vim to native lua/neovim
 
   - title: Website
     url: https://github.com/SethBarberee/sethbarberee.github.io
