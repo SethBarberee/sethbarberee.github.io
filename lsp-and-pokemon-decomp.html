@@ -176,11 +176,22 @@ config then:</p>
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">handlers</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="n">handlers</span><span class="p">[</span><span class="s2">"poryscript/getPoryscriptFiles"</span><span class="p">]</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">ctx</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span>
-    <span class="kd">local</span> <span class="n">base_dir</span> <span class="o">=</span> <span class="n">vim</span><span class="p">.</span><span class="n">fn</span><span class="p">.</span><span class="n">getcwd</span><span class="p">()</span>
-    <span class="c1">-- TODO: search for all *pory files for this request</span>
-    <span class="kd">local</span> <span class="n">files</span> <span class="o">=</span> <span class="n">vim</span><span class="p">.</span><span class="n">fn</span><span class="p">.</span><span class="n">expand</span><span class="p">(</span><span class="n">base_dir</span> <span class="o">..</span> <span class="s2">"/data/scripts/test2.pory"</span><span class="p">)</span>
-    <span class="c1">--print(files)</span>
-    <span class="kd">local</span> <span class="n">files_array</span> <span class="o">=</span> <span class="p">{</span> <span class="n">files</span> <span class="p">}</span>
+    <span class="c1">-- search for all *pory files for this request</span>
+    <span class="c1">-- and return a table of URIs</span>
+
+    <span class="c1">-- get all files ending with .pory</span>
+    <span class="kd">local</span> <span class="n">files</span> <span class="o">=</span> <span class="n">vim</span><span class="p">.</span><span class="n">fs</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s1">'.*%.pory$'</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">,</span> <span class="p">{</span> <span class="n">limit</span> <span class="o">=</span> <span class="nb">math.huge</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s1">'file'</span> <span class="p">})</span>
+
+    <span class="c1">--print(vim.inspect(files))</span>
+
+    <span class="kd">local</span> <span class="n">files_array</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">files</span><span class="p">)</span> <span class="k">do</span>
+        <span class="kd">local</span> <span class="n">uri_file</span> <span class="o">=</span> <span class="n">vim</span><span class="p">.</span><span class="n">uri_from_fname</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+        <span class="nb">table.insert</span><span class="p">(</span><span class="n">files_array</span><span class="p">,</span> <span class="n">uri_file</span><span class="p">)</span>
+    <span class="k">end</span>
+    <span class="c1">--print(vim.inspect(files_array))</span>
     <span class="k">return</span> <span class="n">files_array</span>
 <span class="k">end</span>
 
