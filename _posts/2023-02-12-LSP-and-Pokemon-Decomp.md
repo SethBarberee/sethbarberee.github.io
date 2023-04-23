@@ -86,11 +86,22 @@ config then:
 local handlers = {}
 
 handlers["poryscript/getPoryscriptFiles"] = function(_, result, ctx, _)
-    local base_dir = vim.fn.getcwd()
-    -- TODO: search for all *pory files for this request
-    local files = vim.fn.expand(base_dir .. "/data/scripts/test2.pory")
-    --print(files)
-    local files_array = { files }
+    -- search for all *pory files for this request
+    -- and return a table of URIs
+
+    -- get all files ending with .pory
+    local files = vim.fs.find(function(name, path)
+        return name:match('.*%.pory$')
+    end, { limit = math.huge, type = 'file' })
+
+    --print(vim.inspect(files))
+
+    local files_array = {}
+    for k, v in pairs(files) do
+        local uri_file = vim.uri_from_fname(v)
+        table.insert(files_array, uri_file)
+    end
+    --print(vim.inspect(files_array))
     return files_array
 end
 
