@@ -25,7 +25,8 @@
 {% if site.theme_config.show_tags == true %}
   <div class="">
     {% for tag in page.tags %}
-    <span class="tag">{{ tag }}</span>
+    <a class="tag" href="{{ site.baseurl }}/tag/{{ tag | slugify }}"
+       >{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
     {% endfor %}
   </div>
 {% endif %}

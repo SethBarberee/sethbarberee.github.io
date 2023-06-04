@@ -2,7 +2,7 @@
 layout: post
 title: LSP and Pokemon Decomp
 date: 2023-02-12
-tags: [LSP, nvim]
+tags: [lsp, nvim]
 ---
 
 Most people tend to use VS Code for Pokemon decomp and it works very nicely for
