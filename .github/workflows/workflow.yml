@@ -2,7 +2,7 @@ name: Build Post
 
 on: 
     push:
-        braches: [ pre-deploy ]
+        branches: [ pre-deploy ]
     
 jobs:
     workflow:
@@ -17,6 +17,9 @@ jobs:
             uses: ruby/setup-ruby@v1
             with:
                 ruby-version: 2.7
+
+          - name: Build tags
+            run: python _plugins/compile_tags.py 
 
           - name: 🔨 install dependencies & build site
             uses: limjh16/jekyll-action-ts@v2
