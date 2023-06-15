@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.abhinavsaxena.com/moonwalk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.abhinavsaxena.com/moonwalk/" rel="alternate" type="text/html" /><updated>2023-06-05T04:23:32+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Hello From Somewhere</title><link href="https://www.abhinavsaxena.com/moonwalk/hello-from-somewhere" rel="alternate" type="text/html" title="Hello From Somewhere" /><published>2023-06-04T00:00:00+00:00</published><updated>2023-06-04T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/Hello-From-Somewhere</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/hello-from-somewhere">&lt;h1 id=&quot;pmd-red-progress&quot;&gt;PMD Red Progress&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.abhinavsaxena.com/moonwalk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.abhinavsaxena.com/moonwalk/" rel="alternate" type="text/html" /><updated>2023-06-15T17:30:06+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Hello From Somewhere</title><link href="https://www.abhinavsaxena.com/moonwalk/hello-from-somewhere" rel="alternate" type="text/html" title="Hello From Somewhere" /><published>2023-06-04T00:00:00+00:00</published><updated>2023-06-04T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/Hello-From-Somewhere</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/hello-from-somewhere">&lt;h1 id=&quot;pmd-red-progress&quot;&gt;PMD Red Progress&lt;/h1&gt;
 &lt;p&gt;We’ve been doing pretty well over at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pmd-red&lt;/code&gt;. This was taken on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; as of
 the date on this blog post. My &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;may-2023&lt;/code&gt; branch has a small 2% bump that I
 still need to merge/PR.&lt;/p&gt;
@@ -30,15 +30,15 @@ to be able to romhack on PMD.&lt;/p&gt;
 functional tags on this site. It’s fairly basic but I can live with it for
 now. Anticipate seeing more stuff in the future but can’t guarantee any
 timeline because we all know my speed fluctuates.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><category term="pmd-red" /><summary type="html">PMD Red Progress We’ve been doing pretty well over at pmd-red. This was taken on master as of the date on this blog post. My may-2023 branch has a small 2% bump that I still need to merge/PR. ```c 725060 total bytes of code 295328 bytes of code in src (40.7315%) 429732 bytes of code in asm (59.2685%)</summary></entry><entry><title type="html">LSP and Pokemon Decomp</title><link href="https://www.abhinavsaxena.com/moonwalk/lsp-and-pokemon-decomp" rel="alternate" type="text/html" title="LSP and Pokemon Decomp" /><published>2023-02-12T00:00:00+00:00</published><updated>2023-02-12T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/LSP-and-Pokemon-Decomp</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/lsp-and-pokemon-decomp">&lt;p&gt;Most people tend to use VS Code for Pokemon decomp and it works very nicely for
-them with clangd all set up and tools. However, I’m different. I like to use
-neovim and just doing clangd normally will give errors. Why? Well, you need to
+them with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clangd&lt;/code&gt; all set up and tools. However, I’m different. I like to use
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;neovim&lt;/code&gt; and just doing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clangd&lt;/code&gt; normally will give errors. Why? Well, you need to
 generate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compile_commands.json&lt;/code&gt; first. So, using a tool called
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compiledb&lt;/code&gt;, I’ll do that now for pokeemerald.&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compiledb&lt;/code&gt;, I’ll do that now for &lt;a href=&quot;https://github.com/pret/pokeemerald&quot;&gt;pokeemerald&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;compiledb make
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This will fix most of the previous errors because now, clangd sees the custom
+&lt;p&gt;This will fix most of the previous errors because now, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clangd&lt;/code&gt; sees the custom
 compiler that Pokemon decompilations use. There are still some warnings and
 errors. Mainly, with how the code sets graphics like:&lt;/p&gt;
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u32&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gMonFrontPic_Ivysaur&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;INCBIN_U32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;graphics/pokemon/ivysaur/anim_front.4bpp.lz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -60,12 +60,12 @@ adds in our custom types and other gba/pokemon specific things to &lt;code class
 we’ll remove it. It won’t make a difference in our diagnostics/warnings.&lt;/p&gt;
 
 &lt;h3 id=&quot;extra-credit&quot;&gt;Extra Credit&lt;/h3&gt;
-&lt;p&gt;If you go down the hole of scripting in pokeemerald, there is an interesting
-project called poryscript, which can replace normal scripting. It is a
-different language and has an LSP server! So, install poryscrip-pls (however
+&lt;p&gt;If you go down the hole of scripting in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pokeemerald&lt;/code&gt;, there is an interesting
+project called &lt;a href=&quot;https://github.com/huderlem/poryscript&quot;&gt;poryscript&lt;/a&gt;, which can replace normal scripting. It is a
+different language and has an LSP server! So, install &lt;a href=&quot;https://github.com/huderlem/poryscript-pls&quot;&gt;poryscrip-pls&lt;/a&gt; (however
 you do it for your OS). 
-Now, we need to make neovim call poryscript-pls when it enters the buffer. We
-can do this via a custom nvim-lspconfig configuration. I created the following
+Now, we need to make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;neovim&lt;/code&gt; call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;poryscript-pls&lt;/code&gt; when it enters the buffer. We
+can do this via a custom &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvim-lspconfig&lt;/code&gt; configuration. I created the following
 in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lua/lspconfig/server_configurations/poryscript_lsp.lua&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;util&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'lspconfig.util'&lt;/span&gt;
@@ -153,9 +153,7 @@ config then:&lt;/p&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handlers&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Note, this isn’t exactly perfect noted by the TODO but this will get us some diagnostics now.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><category term="lsp" /><category term="nvim" /><summary type="html">Most people tend to use VS Code for Pokemon decomp and it works very nicely for them with clangd all set up and tools. However, I’m different. I like to use neovim and just doing clangd normally will give errors. Why? Well, you need to generate the compile_commands.json first. So, using a tool called compiledb, I’ll do that now for pokeemerald.</summary></entry><entry><title type="html">We keep keeping on</title><link href="https://www.abhinavsaxena.com/moonwalk/we-keep-keeping-on" rel="alternate" type="text/html" title="We keep keeping on" /><published>2022-11-14T00:00:00+00:00</published><updated>2022-11-14T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/We-keep-keeping-on</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/we-keep-keeping-on">&lt;p&gt;Time flies, huh? My last post was… 9 months ago?! Jeez. Maybe I should set
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Seth Barberee</name></author><category term="lsp" /><category term="nvim" /><summary type="html">Most people tend to use VS Code for Pokemon decomp and it works very nicely for them with clangd all set up and tools. However, I’m different. I like to use neovim and just doing clangd normally will give errors. Why? Well, you need to generate the compile_commands.json first. So, using a tool called compiledb, I’ll do that now for pokeemerald.</summary></entry><entry><title type="html">We keep keeping on</title><link href="https://www.abhinavsaxena.com/moonwalk/we-keep-keeping-on" rel="alternate" type="text/html" title="We keep keeping on" /><published>2022-11-14T00:00:00+00:00</published><updated>2022-11-14T00:00:00+00:00</updated><id>https://www.abhinavsaxena.com/moonwalk/We-keep-keeping-on</id><content type="html" xml:base="https://www.abhinavsaxena.com/moonwalk/we-keep-keeping-on">&lt;p&gt;Time flies, huh? My last post was… 9 months ago?! Jeez. Maybe I should set
 an alarm/reminder to make sure I write these. Anyway, I’ve been all over the
 place.&lt;/p&gt;
 

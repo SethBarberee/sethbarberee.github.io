@@ -104,15 +104,15 @@
 
 
 <p>Most people tend to use VS Code for Pokemon decomp and it works very nicely for
-them with clangd all set up and tools. However, I’m different. I like to use
-neovim and just doing clangd normally will give errors. Why? Well, you need to
+them with <code class="language-plaintext highlighter-rouge">clangd</code> all set up and tools. However, I’m different. I like to use
+<code class="language-plaintext highlighter-rouge">neovim</code> and just doing <code class="language-plaintext highlighter-rouge">clangd</code> normally will give errors. Why? Well, you need to
 generate the <code class="language-plaintext highlighter-rouge">compile_commands.json</code> first. So, using a tool called
-<code class="language-plaintext highlighter-rouge">compiledb</code>, I’ll do that now for pokeemerald.</p>
+<code class="language-plaintext highlighter-rouge">compiledb</code>, I’ll do that now for <a href="https://github.com/pret/pokeemerald">pokeemerald</a>.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compiledb make
 </code></pre></div></div>
 
-<p>This will fix most of the previous errors because now, clangd sees the custom
+<p>This will fix most of the previous errors because now, <code class="language-plaintext highlighter-rouge">clangd</code> sees the custom
 compiler that Pokemon decompilations use. There are still some warnings and
 errors. Mainly, with how the code sets graphics like:</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="n">u32</span> <span class="n">gMonFrontPic_Ivysaur</span><span class="p">[]</span> <span class="o">=</span> <span class="n">INCBIN_U32</span><span class="p">(</span><span class="s">"graphics/pokemon/ivysaur/anim_front.4bpp.lz"</span><span class="p">);</span>
@@ -134,12 +134,12 @@ adds in our custom types and other gba/pokemon specific things to <code class="l
 we’ll remove it. It won’t make a difference in our diagnostics/warnings.</p>
 
 <h3 id="extra-credit">Extra Credit</h3>
-<p>If you go down the hole of scripting in pokeemerald, there is an interesting
-project called poryscript, which can replace normal scripting. It is a
-different language and has an LSP server! So, install poryscrip-pls (however
+<p>If you go down the hole of scripting in <code class="language-plaintext highlighter-rouge">pokeemerald</code>, there is an interesting
+project called <a href="https://github.com/huderlem/poryscript">poryscript</a>, which can replace normal scripting. It is a
+different language and has an LSP server! So, install <a href="https://github.com/huderlem/poryscript-pls">poryscrip-pls</a> (however
 you do it for your OS). 
-Now, we need to make neovim call poryscript-pls when it enters the buffer. We
-can do this via a custom nvim-lspconfig configuration. I created the following
+Now, we need to make <code class="language-plaintext highlighter-rouge">neovim</code> call <code class="language-plaintext highlighter-rouge">poryscript-pls</code> when it enters the buffer. We
+can do this via a custom <code class="language-plaintext highlighter-rouge">nvim-lspconfig</code> configuration. I created the following
 in <code class="language-plaintext highlighter-rouge">lua/lspconfig/server_configurations/poryscript_lsp.lua</code>.</p>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">util</span> <span class="o">=</span> <span class="nb">require</span> <span class="s1">'lspconfig.util'</span>
@@ -228,8 +228,6 @@ config then:</p>
 
 <span class="k">return</span> <span class="n">handlers</span>
 </code></pre></div></div>
-
-<p>Note, this isn’t exactly perfect noted by the TODO but this will get us some diagnostics now.</p>
 
 
 
