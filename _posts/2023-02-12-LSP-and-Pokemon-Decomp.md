@@ -6,16 +6,16 @@ tags: [lsp, nvim]
 ---
 
 Most people tend to use VS Code for Pokemon decomp and it works very nicely for
-them with clangd all set up and tools. However, I'm different. I like to use
-neovim and just doing clangd normally will give errors. Why? Well, you need to
+them with `clangd` all set up and tools. However, I'm different. I like to use
+`neovim` and just doing `clangd` normally will give errors. Why? Well, you need to
 generate the `compile_commands.json` first. So, using a tool called
-`compiledb`, I'll do that now for pokeemerald.
+`compiledb`, I'll do that now for [pokeemerald](https://github.com/pret/pokeemerald).
 
 ```bash
 compiledb make
 ```
 
-This will fix most of the previous errors because now, clangd sees the custom
+This will fix most of the previous errors because now, `clangd` sees the custom
 compiler that Pokemon decompilations use. There are still some warnings and
 errors. Mainly, with how the code sets graphics like:
 ```c
@@ -39,12 +39,12 @@ adds in our custom types and other gba/pokemon specific things to `clang`.
 we'll remove it. It won't make a difference in our diagnostics/warnings.
 
 ### Extra Credit
-If you go down the hole of scripting in pokeemerald, there is an interesting
-project called poryscript, which can replace normal scripting. It is a
-different language and has an LSP server! So, install poryscrip-pls (however
+If you go down the hole of scripting in `pokeemerald`, there is an interesting
+project called [poryscript](https://github.com/huderlem/poryscript), which can replace normal scripting. It is a
+different language and has an LSP server! So, install [poryscrip-pls](https://github.com/huderlem/poryscript-pls) (however
 you do it for your OS). 
-Now, we need to make neovim call poryscript-pls when it enters the buffer. We
-can do this via a custom nvim-lspconfig configuration. I created the following
+Now, we need to make `neovim` call `poryscript-pls` when it enters the buffer. We
+can do this via a custom `nvim-lspconfig` configuration. I created the following
 in `lua/lspconfig/server_configurations/poryscript_lsp.lua`. 
 
 ```lua
@@ -136,6 +136,4 @@ end
 
 return handlers
 ```
-
-Note, this isn't exactly perfect noted by the TODO but this will get us some diagnostics now.
 
