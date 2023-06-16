@@ -33,12 +33,7 @@ jobs:
             working-directory: openring
 
           - name: Generate openring posts
-            run: ./openring/openring \
-                  -s https://www.supergoodcode.com/feed.xml \
-                  -s https://emersion.fr/blog/atom.xml \
-                  -s https://drewdevault.com/blog/index.xml \
-                  < in.html \
-                  > _includes/openring.html
+            run: ./openring/openring -s https://www.supergoodcode.com/feed.xml -s https://emersion.fr/blog/atom.xml -s https://drewdevault.com/blog/index.xml < in.html > _includes/openring.html
 
           - name: Build tags
             run: python _plugins/compile_tags.py 
