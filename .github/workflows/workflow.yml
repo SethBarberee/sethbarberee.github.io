@@ -32,6 +32,9 @@ jobs:
             with:
                 ruby-version: 2.7
 
+          - name: cd back into website
+            run: cd $GITHUB_WORKSPACE
+
           - name: Generate openring posts
             run: ../openring/openring \
                   -s https://www.supergoodcode.com/feed.xml \
