@@ -33,7 +33,7 @@ jobs:
                 ruby-version: 2.7
 
           - name: cd back into website
-            run: cd $GITHUB_WORKSPACE && ls
+            run: cd $GITHUB_WORKSPACE && ls ..
 
           - name: Generate openring posts
             run: ./openring/openring \
