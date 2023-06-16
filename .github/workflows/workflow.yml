@@ -10,8 +10,6 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:    
-          - name: Checkout Repo
-            uses: actions/checkout@v3
 
           - name: Setup Go
             uses: actions/setup-go@v4
@@ -19,15 +17,15 @@ jobs:
               go-version: '1.16.1' # The Go version to download (if necessary) and use.
 
           - name: Checkout Repo
-            uses: actions/checkout@v3
-            with:
-              path: openring
-              repository: https://git.sr.ht/~sircmpwn/openring 
+            run: git clone https://git.sr.ht/~sircmpwn/openring 
 
           - name: Build openring
             run: |
               go build
             working-directory: openring
+
+          - name: Checkout Repo
+            uses: actions/checkout@v3
 
           - name: Setup Ruby
             uses: ruby/setup-ruby@v1
