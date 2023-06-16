@@ -27,7 +27,7 @@ jobs:
           - name: Build openring
             run: |
               go build
-            working_directory: openring
+            working-directory: openring
 
           - name: Setup Ruby
             uses: ruby/setup-ruby@v1
