@@ -18,11 +18,15 @@ jobs:
             with:
               go-version: '1.16.1' # The Go version to download (if necessary) and use.
 
-          - name: Checkout openring
-            run: cd .. && git clone https://git.sr.ht/~sircmpwn/openring # Clone to ROOT/openring
+          - name: Checkout Repo
+            uses: actions/checkout@v3
+            with:
+              path: openring
+              repository: https://git.sr.ht/~sircmpwn/openring 
 
           - name: Build openring
-            run: go build
+            run: |
+              go build
             working_directory: openring
 
           - name: Setup Ruby
