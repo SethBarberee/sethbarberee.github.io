@@ -13,8 +13,19 @@ jobs:
           - name: Checkout Repo
             uses: actions/checkout@v3
 
-          - name: Install openring
-            run: sudo apt-get install openring
+          - name: Setup Go
+          - uses: actions/setup-go@v4
+            with:
+              go-version: '1.16.1' # The Go version to download (if necessary) and use.
+
+          - name: Checkout openring
+            run: cd .. && git clone https://git.sr.ht/~sircmpwn/openring # Clone to ROOT/openring
+
+          - name: Build openring
+            run: cd openring && go build
+
+          - name: cd into website repo
+            run: cd .. && cd sethbarberee.github.io
 
           - name: Setup Ruby
             uses: ruby/setup-ruby@v1
@@ -22,7 +33,7 @@ jobs:
                 ruby-version: 2.7
 
           - name: Generate openring posts
-            run: openring \
+            run: ../openring/openring \
                   -s https://www.supergoodcode.com/feed.xml \
                   -s https://emersion.fr/blog/atom.xml \
                   -s https://drewdevault.com/blog/index.xml \
