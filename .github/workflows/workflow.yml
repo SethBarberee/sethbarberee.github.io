@@ -22,10 +22,8 @@ jobs:
             run: cd .. && git clone https://git.sr.ht/~sircmpwn/openring # Clone to ROOT/openring
 
           - name: Build openring
-            run: cd openring && go build
-
-          - name: cd into website repo
-            run: cd .. && cd sethbarberee.github.io
+            run: go build
+            working_directory: openring
 
           - name: Setup Ruby
             uses: ruby/setup-ruby@v1
