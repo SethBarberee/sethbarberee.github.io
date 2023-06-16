@@ -16,24 +16,21 @@ jobs:
             with:
               go-version: '1.16.1' # The Go version to download (if necessary) and use.
 
+          - name: Setup Ruby
+            uses: ruby/setup-ruby@v1
+            with:
+                ruby-version: 2.7
+
           - name: Checkout Repo
+            uses: actions/checkout@v3
+
+          - name: Checkout openring
             run: git clone https://git.sr.ht/~sircmpwn/openring 
 
           - name: Build openring
             run: |
               go build
             working-directory: openring
-
-          - name: Checkout Repo
-            uses: actions/checkout@v3
-
-          - name: Setup Ruby
-            uses: ruby/setup-ruby@v1
-            with:
-                ruby-version: 2.7
-
-          - name: cd back into website
-            run: cd $GITHUB_WORKSPACE && ls ..
 
           - name: Generate openring posts
             run: ./openring/openring \
