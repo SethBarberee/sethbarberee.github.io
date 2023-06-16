@@ -36,7 +36,7 @@ jobs:
             run: cd $GITHUB_WORKSPACE
 
           - name: Generate openring posts
-            run: ../openring/openring \
+            run: ./openring/openring \
                   -s https://www.supergoodcode.com/feed.xml \
                   -s https://emersion.fr/blog/atom.xml \
                   -s https://drewdevault.com/blog/index.xml \
