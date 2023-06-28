@@ -13,6 +13,10 @@ navbar_entries:
 
 
 project_entries:
+  - title: tree-sitter-asm
+    url: https://github.com/SethBarberee/tree-sitter-asm
+    desc: Tree-sitter parser for ARM/Thumb
+    
   - title: Azur Lane Sorter
     url: https://github.com/SethBarberee/AzurLaneSorter
     desc: PyQT GUI that tries to create the best fleet given a txt list
