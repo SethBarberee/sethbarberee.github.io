@@ -14,6 +14,7 @@ jekyll_get:
 plugins:
   - jekyll-feed
   - jekyll-soopr-seo-tag
+  - jekyll-sitemap
 
 favicon: "favicon.ico" # relative path to site's favicon
 
