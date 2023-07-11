@@ -3,6 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Speed up giscus load by preloading thanks to https://www.brycewray.com/posts/2022/07/more-tips-using-giscus/#give-the-browser-a-head-start-->
+  <link rel="preconnect" href="https://giscus.app">
+  <link rel="dns-prefetch" href="https://giscus.app">
+
   <title>
     {% if page.title %}
       {{ page.title }}
