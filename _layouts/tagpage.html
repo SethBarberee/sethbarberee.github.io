@@ -6,7 +6,7 @@ layout: default
 <div class="post">
 <h1>Tag: {{ page.tag }}</h1>
 
-<div>
+<ul>
 {% for post in site.posts %}
   {%comment%}
     According to documentation, arrays should be filterable
@@ -16,6 +16,6 @@ layout: default
     {% include post_listing.html %}
   {% endif %}
 {% endfor %}
-</div>
+</ul>
 
 </div>
