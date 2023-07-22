@@ -1,6 +1,6 @@
 ---
 permalink: /404.html
-layout: post
+layout: default
 ---
 
 <style type="text/css" media="screen">
@@ -16,6 +16,8 @@ layout: post
     letter-spacing: -1px;
   }
 </style>
+
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
 
 <div class="container">
   <h1>404</h1>

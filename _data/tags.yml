@@ -1,0 +1,14 @@
+- name: laptop
+  description: Random things about my laptop
+
+- name: lsp
+  description: Adventures with Neovim language server protocol
+
+- name: nvim
+  description: neovim stuff
+
+- name: pmd-red
+  description: writings about Pokemon Mystery Dungeon - Red Rescue Team
+
+- name: tree-sitter-asm
+  description: My treesitter parser that I wrote to parse ARM/Thumb
