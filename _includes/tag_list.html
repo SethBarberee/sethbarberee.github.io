@@ -1,8 +1,7 @@
 <ul>
   {% for tag in site.data.tags %}
     <li>
-        <a href="{{ site.baseurl }}{{tag.name}}">{{ tag.name }}</a> - {{ tag.description }}
-
+        <a href="tag/{{tag.name}}">{{ tag.name }}</a> - {{ tag.description }}
     </li>
   {% endfor %}
 </ul>
