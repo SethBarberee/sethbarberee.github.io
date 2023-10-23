@@ -25,6 +25,60 @@ Kanto Starters with the Johto Starters in FireRed.
 {% include image.html file="rival_firered.png" description="And once you pick your starter, the first rival battle..." %}
 
 ## Tutorial
-TODO Seth: update with instructions on how I did it with a tutorial. If I
-forgot, please open an Issue on the GitHub.
+
+No C Code has to be changed here because it's all scripting for the Oak
+Pokemon intro. Mainly did a search/replace for each starter i.e
+`SPECIES_SQUIRTLE` -> `SPECIES_TOTODILE`. Since these are variables already,
+the game will handle the mon pics, party, and initial battle automatically.
+
+Change the following in `data/maps/PalletTown_ProfessorOaksLab`:
+```diff
+
+PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::
+	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 1
+-       setvar PLAYER_STARTER_SPECIES, SPECIES_SQUIRTLE
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
++       setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE
++       setvar RIVAL_STARTER_SPECIES, SPECIES_CHIKORITA
+	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall::
+	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 0
+-       setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
++       setvar PLAYER_STARTER_SPECIES, SPECIES_CHIKORITA
++       setvar RIVAL_STARTER_SPECIES, SPECIES_CYNDAQUIL
+	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_CharmanderBall::
+	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 2
+-       setvar PLAYER_STARTER_SPECIES, SPECIES_CHARMANDER
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
++       setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL
++       setvar RIVAL_STARTER_SPECIES, SPECIES_TOTODILE
+	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+
+```
+
 
