@@ -151,8 +151,60 @@ Kanto Starters with the Johto Starters in FireRed.</p>
 <p><!-- Mainly to create a line break --></p>
 
 <h2 id="tutorial">Tutorial</h2>
-<p>TODO Seth: update with instructions on how I did it with a tutorial. If I
-forgot, please open an Issue on the GitHub.</p>
+
+<p>No C Code has to be changed here because it’s all scripting for the Oak
+Pokemon intro. Mainly did a search/replace for each starter i.e
+<code class="language-plaintext highlighter-rouge">SPECIES_SQUIRTLE</code> -&gt; <code class="language-plaintext highlighter-rouge">SPECIES_TOTODILE</code>. Since these are variables already,
+the game will handle the mon pics, party, and initial battle automatically.</p>
+
+<p>Change the following in <code class="language-plaintext highlighter-rouge">data/maps/PalletTown_ProfessorOaksLab</code>:</p>
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">
+</span><span class="p">PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::
+</span>	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 1
+<span class="gd">-       setvar PLAYER_STARTER_SPECIES, SPECIES_SQUIRTLE
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
+</span><span class="gi">+       setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE
++       setvar RIVAL_STARTER_SPECIES, SPECIES_CHIKORITA
+</span>	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+<span class="err">
+</span><span class="p">PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall::
+</span>	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 0
+<span class="gd">-       setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
+</span><span class="gi">+       setvar PLAYER_STARTER_SPECIES, SPECIES_CHIKORITA
++       setvar RIVAL_STARTER_SPECIES, SPECIES_CYNDAQUIL
+</span>	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+<span class="err">
+</span><span class="p">PalletTown_ProfessorOaksLab_EventScript_CharmanderBall::
+</span>	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 2
+<span class="gd">-       setvar PLAYER_STARTER_SPECIES, SPECIES_CHARMANDER
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
+</span><span class="gi">+       setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL
++       setvar RIVAL_STARTER_SPECIES, SPECIES_TOTODILE
+</span>	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+<span class="err">
+</span></code></pre></div></div>
 
 
 <script id="myScript" src="https://giscus.app/client.js"

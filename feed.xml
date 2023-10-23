@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://sethbarberee.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sethbarberee.github.io/" rel="alternate" type="text/html" /><updated>2023-10-23T00:50:45+00:00</updated><id>https://sethbarberee.github.io/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Hello From Somewhere</title><link href="https://sethbarberee.github.io/hello-from-somewhere" rel="alternate" type="text/html" title="Hello From Somewhere" /><published>2023-06-04T00:00:00+00:00</published><updated>2023-06-04T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Hello-From-Somewhere</id><content type="html" xml:base="https://sethbarberee.github.io/hello-from-somewhere">&lt;h1 id=&quot;pmd-red-progress&quot;&gt;PMD Red Progress&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://sethbarberee.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sethbarberee.github.io/" rel="alternate" type="text/html" /><updated>2023-10-23T02:55:26+00:00</updated><id>https://sethbarberee.github.io/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Hello From Somewhere</title><link href="https://sethbarberee.github.io/hello-from-somewhere" rel="alternate" type="text/html" title="Hello From Somewhere" /><published>2023-06-04T00:00:00+00:00</published><updated>2023-06-04T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Hello-From-Somewhere</id><content type="html" xml:base="https://sethbarberee.github.io/hello-from-somewhere">&lt;h1 id=&quot;pmd-red-progress&quot;&gt;PMD Red Progress&lt;/h1&gt;
 &lt;p&gt;We’ve been doing pretty well over at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pmd-red&lt;/code&gt;. This was taken on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; as of
 the date on this blog post. My &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;may-2023&lt;/code&gt; branch has a small 2% bump that I
 still need to merge/PR.&lt;/p&gt;
@@ -354,8 +354,60 @@ Kanto Starters with the Johto Starters in FireRed.&lt;/p&gt;
 &lt;p&gt;&lt;!-- Mainly to create a line break --&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tutorial&quot;&gt;Tutorial&lt;/h2&gt;
-&lt;p&gt;TODO Seth: update with instructions on how I did it with a tutorial. If I
-forgot, please open an Issue on the GitHub.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><category term="pokeemerald" /><category term="pokefirered" /><summary type="html">It’s been a fun time this summer. I’ve been messing with the disassemblies of Pokemon FireRed and Emerald. I have some basic C knowledge and Assembly knowledge so I was able to figure out, for the most part, how the code worked. FireRed was harder to change the starters vs Emerald due to having to edit Text, Pokemon, and Trainer Parties. I only edited the first battle and didn’t update the rest of the game. If I was doing an actual hack, I probably would have done that. This mainly took an hour once I figured out what I was doing.</summary></entry><entry><title type="html">Messin with CI</title><link href="https://sethbarberee.github.io/messin-with-ci" rel="alternate" type="text/html" title="Messin with CI" /><published>2020-05-17T00:00:00+00:00</published><updated>2020-05-17T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Messin-with-CI</id><content type="html" xml:base="https://sethbarberee.github.io/messin-with-ci">&lt;p&gt;Now that I got Travis CI set up, I can actually use other plugins that GitHub
+
+&lt;p&gt;No C Code has to be changed here because it’s all scripting for the Oak
+Pokemon intro. Mainly did a search/replace for each starter i.e
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPECIES_SQUIRTLE&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPECIES_TOTODILE&lt;/code&gt;. Since these are variables already,
+the game will handle the mon pics, party, and initial battle automatically.&lt;/p&gt;
+
+&lt;p&gt;Change the following in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data/maps/PalletTown_ProfessorOaksLab&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::
+&lt;/span&gt;	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 1
+&lt;span class=&quot;gd&quot;&gt;-       setvar PLAYER_STARTER_SPECIES, SPECIES_SQUIRTLE
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
+&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+       setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE
++       setvar RIVAL_STARTER_SPECIES, SPECIES_CHIKORITA
+&lt;/span&gt;	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall::
+&lt;/span&gt;	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 0
+&lt;span class=&quot;gd&quot;&gt;-       setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
+&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+       setvar PLAYER_STARTER_SPECIES, SPECIES_CHIKORITA
++       setvar RIVAL_STARTER_SPECIES, SPECIES_CYNDAQUIL
+&lt;/span&gt;	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;PalletTown_ProfessorOaksLab_EventScript_CharmanderBall::
+&lt;/span&gt;	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 2
+&lt;span class=&quot;gd&quot;&gt;-       setvar PLAYER_STARTER_SPECIES, SPECIES_CHARMANDER
+-       setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
+&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+       setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL
++       setvar RIVAL_STARTER_SPECIES, SPECIES_TOTODILE
+&lt;/span&gt;	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
+	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
+	release
+	end
+&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Seth Barberee</name></author><category term="pokeemerald" /><category term="pokefirered" /><summary type="html">It’s been a fun time this summer. I’ve been messing with the disassemblies of Pokemon FireRed and Emerald. I have some basic C knowledge and Assembly knowledge so I was able to figure out, for the most part, how the code worked. FireRed was harder to change the starters vs Emerald due to having to edit Text, Pokemon, and Trainer Parties. I only edited the first battle and didn’t update the rest of the game. If I was doing an actual hack, I probably would have done that. This mainly took an hour once I figured out what I was doing.</summary></entry><entry><title type="html">Messin with CI</title><link href="https://sethbarberee.github.io/messin-with-ci" rel="alternate" type="text/html" title="Messin with CI" /><published>2020-05-17T00:00:00+00:00</published><updated>2020-05-17T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Messin-with-CI</id><content type="html" xml:base="https://sethbarberee.github.io/messin-with-ci">&lt;p&gt;Now that I got Travis CI set up, I can actually use other plugins that GitHub
 Pages doesn’t support, like paginate-v2. Can’t wait to try them out but it was
 a headache since I didn’t know how Travis CI works. Luckily YAML and
 documentation isn’t too hard to figure out. I did find some blog posts around
