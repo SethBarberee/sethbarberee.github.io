@@ -33,7 +33,7 @@
 <meta name="twitter:site" content="@s_barberee" />
 <meta name="twitter:creator" content="@Seth Barberee" />
 <script type="application/ld+json">
-{"datePublished":"2020-05-17T00:00:00+00:00","dateModified":"2020-05-17T00:00:00+00:00","description":"Now that I got Travis CI set up, I can actually use other plugins that GitHub Pages doesn’t support, like paginate-v2. Can’t wait to try them out but it was a headache since I didn’t know how Travis CI works. Luckily YAML and documentation isn’t too hard to figure out. I did find some blog posts around the internet showing me how it’s done so I did try to follow those. However, as evidenced by the CI errors, I had a few things happen to me hah. Now, I better try the new features and see what happens.","mainEntityOfPage":{"@type":"WebPage","@id":"https://sethbarberee.github.io/messin-with-ci"},"url":"https://sethbarberee.github.io/messin-with-ci","@type":"BlogPosting","author":{"@type":"Person","name":"Seth Barberee"},"headline":"Messin with CI","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Seth Barberee"},"headline":"Messin with CI","dateModified":"2020-05-17T00:00:00+00:00","datePublished":"2020-05-17T00:00:00+00:00","description":"Now that I got Travis CI set up, I can actually use other plugins that GitHub Pages doesn’t support, like paginate-v2. Can’t wait to try them out but it was a headache since I didn’t know how Travis CI works. Luckily YAML and documentation isn’t too hard to figure out. I did find some blog posts around the internet showing me how it’s done so I did try to follow those. However, as evidenced by the CI errors, I had a few things happen to me hah. Now, I better try the new features and see what happens.","url":"https://sethbarberee.github.io/messin-with-ci","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sethbarberee.github.io/messin-with-ci"},"@context":"https://schema.org"}</script>
 <script async defer data-soopr-token="" src="https://sdk.soopr.co/soopr.js"  ></script>
 <!-- End Jekyll SEO tag -->
 
@@ -116,21 +116,55 @@ work</li>
   <li>RPI Emulator stalled until I can get a dremel.</li>
 </ul>
 
-<script src="https://giscus.app/client.js"
-        data-repo="sethbarberee/sethbarberee.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnk4MTM3Mzg4MA=="
-        data-category="Announcements"
-        data-category-id="DIC_kwDOBNmquM4CXx5O"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+<script id="myScript" src="https://giscus.app/client.js"
+    data-repo="sethbarberee/sethbarberee.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnk4MTM3Mzg4MA=="
+    data-category="Announcements"
+    data-category-id="DIC_kwDOBNmquM4CXx5O"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
 </script>
+
+<script>
+    // https://github.com/giscus/giscus/issues/336 
+    const html = document.querySelector("html");
+    const giscusTheme = html.getAttribute("data-theme") === "dark" ? "dark" : "light";
+
+    var someScriptElement = document.getElementById("myScript");
+    someScriptElement.setAttribute("data-theme", giscusTheme);
+
+    function changeTheme() {
+        const html = document.querySelector("html");
+        const newGiscusTheme = html.getAttribute("data-theme") === "dark" ? "light" : "dark"; // theme we are changing to
+
+        function sendMessage(message) {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newGiscusTheme
+          }
+        });
+    }
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('.theme-toggle');
+        if (toggle) {
+            toggle.addEventListener('click', changeTheme);
+        }
+    });
+
+</script>
+
 
 
         

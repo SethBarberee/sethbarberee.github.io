@@ -33,7 +33,7 @@
 <meta name="twitter:site" content="@s_barberee" />
 <meta name="twitter:creator" content="@Seth Barberee" />
 <script type="application/ld+json">
-{"datePublished":"2021-07-30T00:00:00+00:00","dateModified":"2021-07-30T00:00:00+00:00","description":"It’s been a while since I touched this blog. My excuse, Travis CI. I was about to do another post and realized it wouldn’t update. So, I spent like 10 mins moving it from Travis to Github Actions. Turned out nicely and I don’t have to worry about dumb credits. Work has been relentless in keeping me busy but PMD: Red has made some good progress. Here’s a status update:","mainEntityOfPage":{"@type":"WebPage","@id":"https://sethbarberee.github.io/revving-it-up"},"url":"https://sethbarberee.github.io/revving-it-up","@type":"BlogPosting","author":{"@type":"Person","name":"Seth Barberee"},"headline":"Revving it Up","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Seth Barberee"},"headline":"Revving it Up","dateModified":"2021-07-30T00:00:00+00:00","datePublished":"2021-07-30T00:00:00+00:00","description":"It’s been a while since I touched this blog. My excuse, Travis CI. I was about to do another post and realized it wouldn’t update. So, I spent like 10 mins moving it from Travis to Github Actions. Turned out nicely and I don’t have to worry about dumb credits. Work has been relentless in keeping me busy but PMD: Red has made some good progress. Here’s a status update:","url":"https://sethbarberee.github.io/revving-it-up","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sethbarberee.github.io/revving-it-up"},"@context":"https://schema.org"}</script>
 <script async defer data-soopr-token="" src="https://sdk.soopr.co/soopr.js"  ></script>
 <!-- End Jekyll SEO tag -->
 
@@ -136,21 +136,55 @@ future tools to read/edit it. PoryDungeon when?</p>
 and enjoy. COVID seems to drag on here but we keep on going. For me, I’ll keep
 revving through it all as we just saw with my blog.</p>
 
-<script src="https://giscus.app/client.js"
-        data-repo="sethbarberee/sethbarberee.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnk4MTM3Mzg4MA=="
-        data-category="Announcements"
-        data-category-id="DIC_kwDOBNmquM4CXx5O"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+<script id="myScript" src="https://giscus.app/client.js"
+    data-repo="sethbarberee/sethbarberee.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnk4MTM3Mzg4MA=="
+    data-category="Announcements"
+    data-category-id="DIC_kwDOBNmquM4CXx5O"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
 </script>
+
+<script>
+    // https://github.com/giscus/giscus/issues/336 
+    const html = document.querySelector("html");
+    const giscusTheme = html.getAttribute("data-theme") === "dark" ? "dark" : "light";
+
+    var someScriptElement = document.getElementById("myScript");
+    someScriptElement.setAttribute("data-theme", giscusTheme);
+
+    function changeTheme() {
+        const html = document.querySelector("html");
+        const newGiscusTheme = html.getAttribute("data-theme") === "dark" ? "light" : "dark"; // theme we are changing to
+
+        function sendMessage(message) {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newGiscusTheme
+          }
+        });
+    }
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('.theme-toggle');
+        if (toggle) {
+            toggle.addEventListener('click', changeTheme);
+        }
+    });
+
+</script>
+
 
 
         

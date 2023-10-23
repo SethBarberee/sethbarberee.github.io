@@ -33,7 +33,7 @@
 <meta name="twitter:site" content="@s_barberee" />
 <meta name="twitter:creator" content="@Seth Barberee" />
 <script type="application/ld+json">
-{"datePublished":"2023-02-12T00:00:00+00:00","dateModified":"2023-02-12T00:00:00+00:00","description":"Most people tend to use VS Code for Pokemon decomp and it works very nicely for them with clangd all set up and tools. However, I’m different. I like to use neovim and just doing clangd normally will give errors. Why? Well, you need to generate the compile_commands.json first. So, using a tool called compiledb, I’ll do that now for pokeemerald.","mainEntityOfPage":{"@type":"WebPage","@id":"https://sethbarberee.github.io/lsp-and-pokemon-decomp"},"url":"https://sethbarberee.github.io/lsp-and-pokemon-decomp","@type":"BlogPosting","author":{"@type":"Person","name":"Seth Barberee"},"headline":"LSP and Pokemon Decomp","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Seth Barberee"},"headline":"LSP and Pokemon Decomp","dateModified":"2023-02-12T00:00:00+00:00","datePublished":"2023-02-12T00:00:00+00:00","description":"Most people tend to use VS Code for Pokemon decomp and it works very nicely for them with clangd all set up and tools. However, I’m different. I like to use neovim and just doing clangd normally will give errors. Why? Well, you need to generate the compile_commands.json first. So, using a tool called compiledb, I’ll do that now for pokeemerald.","url":"https://sethbarberee.github.io/lsp-and-pokemon-decomp","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sethbarberee.github.io/lsp-and-pokemon-decomp"},"@context":"https://schema.org"}</script>
 <script async defer data-soopr-token="" src="https://sdk.soopr.co/soopr.js"  ></script>
 <!-- End Jekyll SEO tag -->
 
@@ -234,21 +234,55 @@ config then:</p>
 </code></pre></div></div>
 
 
-<script src="https://giscus.app/client.js"
-        data-repo="sethbarberee/sethbarberee.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnk4MTM3Mzg4MA=="
-        data-category="Announcements"
-        data-category-id="DIC_kwDOBNmquM4CXx5O"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+<script id="myScript" src="https://giscus.app/client.js"
+    data-repo="sethbarberee/sethbarberee.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnk4MTM3Mzg4MA=="
+    data-category="Announcements"
+    data-category-id="DIC_kwDOBNmquM4CXx5O"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
 </script>
+
+<script>
+    // https://github.com/giscus/giscus/issues/336 
+    const html = document.querySelector("html");
+    const giscusTheme = html.getAttribute("data-theme") === "dark" ? "dark" : "light";
+
+    var someScriptElement = document.getElementById("myScript");
+    someScriptElement.setAttribute("data-theme", giscusTheme);
+
+    function changeTheme() {
+        const html = document.querySelector("html");
+        const newGiscusTheme = html.getAttribute("data-theme") === "dark" ? "light" : "dark"; // theme we are changing to
+
+        function sendMessage(message) {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newGiscusTheme
+          }
+        });
+    }
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggle = document.querySelector('.theme-toggle');
+        if (toggle) {
+            toggle.addEventListener('click', changeTheme);
+        }
+    });
+
+</script>
+
 
 
         
