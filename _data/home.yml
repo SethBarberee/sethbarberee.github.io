@@ -37,6 +37,10 @@ project_entries:
     url: https://github.com/SethBarberee/sethbarberee.github.io
     desc: This website's git repo
 
+  - title: qmk-userspace 
+    url: https://github.com/SethBarberee/qmk_userspace
+    desc: My keymap/userspace for QMK Firmware
+
 old_project_entries:
   - title: Arduino/Beaglebone Based Alexa
     url: https://github.com/ssnatarajn98/TamuMake
