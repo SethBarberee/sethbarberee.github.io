@@ -144,7 +144,8 @@ func main() {
 		}
 		base, err := url.Parse(feed.UpdateURL)
 		if err != nil {
-			log.Fatal("failed parsing update URL of the feed")
+			log.Fatalf("%s: failed parsing update URL of the feed",
+				feed.UpdateURL)
 		}
 		feedLink, err := url.Parse(feed.Link)
 		if err != nil {
@@ -160,7 +161,8 @@ func main() {
 
 			itemLink, err := url.Parse(item.Link)
 			if err != nil {
-				log.Fatal("failed parsing article URL of the feed item")
+				log.Fatalf("%s: failed parsing article URL of the feed item",
+					item.Link)
 			}
 
 			articles = append(articles, &Article{
