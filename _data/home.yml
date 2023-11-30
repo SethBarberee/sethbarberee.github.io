@@ -11,6 +11,9 @@ navbar_entries:
   - title: website
     url: https://sethbarberee.github.io
 
+  - title: bike map
+    url: bike
+
 
 project_entries:
   - title: tree-sitter-asm
