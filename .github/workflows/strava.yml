@@ -19,7 +19,7 @@ jobs:
               persist-credentials: false
 
           - name: OAUTH
-            uses: JamesIves/fetch-api-data-action@releases/v1
+            uses: JamesIves/fetch-api-data-action@v2
             with:
               token-endpoint: https://www.strava.com/api/v3/oauth/token
               token-configuration: '{ "method": "POST", "body": {"client_id": "${{ secrets.client_id }}", "client_secret": "${{ secrets.client_secret }}"} }'
