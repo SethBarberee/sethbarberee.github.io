@@ -4,13 +4,18 @@ on:
     schedule:
       - cron: 25 17 * * 0-6
     workflow_dispatch:
-    
+
+env:
+    CLIENT_ID: {{ secrets.CLIENT_ID }}
+    CLIENT_SECRET: {{ secrets.CLIENT_SECRET }}
+
 jobs:
     fetch_data:
         name: Update Strava stats
         runs-on: ubuntu-latest
         outputs:
           output1: ${{ steps.fetch.outputs.token }}
+
 
         steps:
           - name: Checkout 🛎️
@@ -22,18 +27,12 @@ jobs:
             uses: JamesIves/fetch-api-data-action@v2
             with:
               token-endpoint: https://www.strava.com/api/v3/oauth/token
-              token-configuration: '{ "method": "POST", "body": {"client_id": "${{ secrets.client_id }}", "client_secret": "${{ secrets.client_secret }}"} }'
+              token-configuration: '{ "method": "POST", "body": {"client_id": "$CLIENT_ID", "client_secret": "$CLIENT_SECRET"} }'
               endpoint: https://www.strava.com/api/v3/athlete/activities
               configuration: '{ "method": "GET", "headers": {"Authorization": "Bearer {{{ data.access_token }}}"} }'
 
-          - id: fetch
-            run: echo "token={{{ data.access_token }}}" >> "$GITHUB_OUTPUT"
-    filter_runs:
-        needs: fetch_data
-        name: Filter runs
-        runs-on: ubuntu-latest
+          - name: Set auth token
+            run: echo "TOKEN={{{ data.access_token }}}" >> "$GITHUB_ENV"
 
-        steps:
-          - env:
-              TOKEN: ${{needs.fetch.outputs.token}}
+          - name: filter_runs
             run: python ./extract-runs.py
