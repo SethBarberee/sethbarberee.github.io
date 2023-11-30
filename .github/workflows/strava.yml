@@ -18,13 +18,15 @@ jobs:
             with:
               persist-credentials: false
 
-          - id: fetch 
+          - name: OAUTH
             uses: JamesIves/fetch-api-data-action@releases/v1
             with:
               token-endpoint: https://www.strava.com/api/v3/oauth/token
               token-configuration: '{ "method": "POST", "body": {"client_id": "${{ secrets.client_id }}", "client_secret": "${{ secrets.client_secret }}"} }'
               endpoint: https://www.strava.com/api/v3/athlete/activities
               configuration: '{ "method": "GET", "headers": {"Authorization": "Bearer {{{ data.access_token }}}"} }'
+
+          - id: fetch
             run: echo "token={{{ data.access_token }}}" >> "$GITHUB_OUTPUT"
     filter_runs:
         name: Filter runs
