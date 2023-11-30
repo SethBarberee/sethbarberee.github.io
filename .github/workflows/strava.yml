@@ -29,10 +29,11 @@ jobs:
           - id: fetch
             run: echo "token={{{ data.access_token }}}" >> "$GITHUB_OUTPUT"
     filter_runs:
+        needs: fetch_data
         name: Filter runs
         runs-on: ubuntu-latest
 
         steps:
           - env:
               TOKEN: ${{needs.fetch.outputs.token}}
-            run: python extract-runs.py
+            run: python ./extract-runs.py
