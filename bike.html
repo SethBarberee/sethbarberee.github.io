@@ -5,9 +5,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
     <script type="text/javascript" src="https://rawgit.com/jieter/Leaflet.encoded/master/Polyline.encoded.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <style>
       html, body {
         height: 100%;
@@ -27,21 +32,32 @@
     <div id="map"></div>
         <script>
         // initialize Leaflet
-        var map = L.map('map').setView({lon: -121.88, lat: 33.337}, 7);
 
-        // add the OpenStreetMap tiles
-        // L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        //   maxZoom: 19,
-        //   attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-        // }).addTo(map);
+        // add the OpenStreetMap base tiles
+
+        var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        });
 
         // Use Cycl-osm tiles for bike routes
-        // TODO: figure out what tiles I want to display for bike routes
-        L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
+        var cyclosm = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
             maxZoom: 20,
             attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+        });
 
+        var map = L.map('map',  {
+            center: [33.337, -121.88],
+            zoom: 7,
+            layers: [cyclosm, osm]
+        });
+
+        var baseMaps = {
+            "OpenStreetMap": osm,
+            "CyclOpenStreetMap": cyclosm
+        };
+
+        var layerControl = L.control.layers(baseMaps).addTo(map);
 
         // With the script above, take the string from Strava and then decode it
 
@@ -52,7 +68,7 @@
                 const array = lines.map(line => line.split(","));
 
                 for(index = 1; index < array.length - 1; index++)
-            {
+                {
 
                     const line = array[index]
                     // console.log(line);
