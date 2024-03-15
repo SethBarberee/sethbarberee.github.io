@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://sethbarberee.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sethbarberee.github.io/" rel="alternate" type="text/html" /><updated>2024-03-10T05:27:37+00:00</updated><id>https://sethbarberee.github.io/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Halfway to Success</title><link href="https://sethbarberee.github.io/halfway-to-success" rel="alternate" type="text/html" title="Halfway to Success" /><published>2023-10-23T00:00:00+00:00</published><updated>2023-10-23T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Halfway-to-Success</id><content type="html" xml:base="https://sethbarberee.github.io/halfway-to-success">&lt;h2 id=&quot;ebike-time&quot;&gt;eBike Time&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://sethbarberee.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sethbarberee.github.io/" rel="alternate" type="text/html" /><updated>2024-03-15T20:57:35+00:00</updated><id>https://sethbarberee.github.io/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Building a New Framework</title><link href="https://sethbarberee.github.io/building-a-new-framework" rel="alternate" type="text/html" title="Building a New Framework" /><published>2024-03-15T00:00:00+00:00</published><updated>2024-03-15T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Building-a-New-Framework</id><content type="html" xml:base="https://sethbarberee.github.io/building-a-new-framework">&lt;h2 id=&quot;framework-13&quot;&gt;Framework 13&lt;/h2&gt;
+&lt;p&gt;I’ve retiring my Dell XPS 9575 that I got in 2019. You can see more about it
+&lt;a href=&quot;https://sethbarberee.github.io/new-laptop-new-horizons&quot;&gt;here&lt;/a&gt;. I have been watching Framework for a while and
+finally pulled the trigger to get a Framework 13 AMD Edition from them. I got
+the DIY Version so I can experience the full thing from shell to working
+laptop. I sourced the exact memory (32GB Crucial) and 2TB NVMe SSD from a
+local computer store for less and got to work when I received the
+shell/motherboard. Assembly was rather simple and straightforward given the
+instructions and videos provided by Framework. Every step was document in text
+and video form so as someone that prefers a visual demonstration, I greatly
+appreciated this. With the memory and storage installed, I did the first boot
+and it booted! With a fresh laptop ready and no OS installed, it’s only
+natural to install Arch Linux because I use Arch BTW. Framework doesn’t
+support Arch as an OS on their laptops, mainly Ubuntu and Fedora. Since Arch
+is a rolling release distribution, most of the hardware is supported on recent
+kernels and works out of the box. Firmware for the laptop is delivered through
+FWUPD too. You might be saying “Okay, Seth, but there are downsides to this
+upgrade right?” and yes, you are right. I have a smaller screen (15 -&amp;gt; 13)
+and no touchscreen. The upsides? Quadruple the memory (8GB to 32GB), more
+recent processor, and quadruple the storage (500GB to 2TB). I’m typing this
+post from my Framework now! Random trivia but I like to name every computer I
+use on Linux after a Greek God/Goddesses. The Dell XPS was Athena and the
+Framework was christened as Hades.&lt;/p&gt;
+
+&lt;h2 id=&quot;website-updates&quot;&gt;Website Updates&lt;/h2&gt;
+&lt;p&gt;I’ve been slowly tweaking things on the site when I get time or feel like it.
+I added multi-layer support on my &lt;a href=&quot;https://sethbarberee.github.io/bike&quot;&gt;bike map&lt;/a&gt;. 
+I have plenty of other ideas to spruce that page up but that will come another
+time.&lt;/p&gt;
+
+&lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h2&gt;
+&lt;p&gt;I’m always busy with work but I have plans to possibly do a series on PMD:Red
+to explain inner workings like the personality test, menus, etc. Since I did
+most of the decompilation on these topics, I am probably the person most
+qualified to write it (when I feel like it).&lt;/p&gt;</content><author><name>Seth Barberee</name></author><category term="laptop" /><summary type="html">Framework 13 I’ve retiring my Dell XPS 9575 that I got in 2019. You can see more about it here. I have been watching Framework for a while and finally pulled the trigger to get a Framework 13 AMD Edition from them. I got the DIY Version so I can experience the full thing from shell to working laptop. I sourced the exact memory (32GB Crucial) and 2TB NVMe SSD from a local computer store for less and got to work when I received the shell/motherboard. Assembly was rather simple and straightforward given the instructions and videos provided by Framework. Every step was document in text and video form so as someone that prefers a visual demonstration, I greatly appreciated this. With the memory and storage installed, I did the first boot and it booted! With a fresh laptop ready and no OS installed, it’s only natural to install Arch Linux because I use Arch BTW. Framework doesn’t support Arch as an OS on their laptops, mainly Ubuntu and Fedora. Since Arch is a rolling release distribution, most of the hardware is supported on recent kernels and works out of the box. Firmware for the laptop is delivered through FWUPD too. You might be saying “Okay, Seth, but there are downsides to this upgrade right?” and yes, you are right. I have a smaller screen (15 -&amp;gt; 13) and no touchscreen. The upsides? Quadruple the memory (8GB to 32GB), more recent processor, and quadruple the storage (500GB to 2TB). I’m typing this post from my Framework now! Random trivia but I like to name every computer I use on Linux after a Greek God/Goddesses. The Dell XPS was Athena and the Framework was christened as Hades.</summary></entry><entry><title type="html">Halfway to Success</title><link href="https://sethbarberee.github.io/halfway-to-success" rel="alternate" type="text/html" title="Halfway to Success" /><published>2023-10-23T00:00:00+00:00</published><updated>2023-10-23T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Halfway-to-Success</id><content type="html" xml:base="https://sethbarberee.github.io/halfway-to-success">&lt;h2 id=&quot;ebike-time&quot;&gt;eBike Time&lt;/h2&gt;
 &lt;p&gt;My Lectric XP 3.0 Long Range eBike came in ~1 month ago and I’m loving it so
 far. I have 230 miles on it so halfway to a tank of gas on my car. Maximum
 range is 60 miles but with pedal assist level 2, I’m getting about 40 miles
@@ -366,101 +400,4 @@ test program for a product and see how it aligns to the datasheet and explain
 each test. Mix of hardware and software, the way I like it. Been messing with
 more Vim configuration and GBA decomp stuff in the free time. The more I learn
 about it, the more I am amazed about the Game Boy Advance. It was really
-impressive for its features.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">I’m about two weeks into the new apartment life here in California. Given the rage still of COVID19, I’ve already started the search for a quarantine buddy. Humane Society website has been a great way to end the day of browsing at cats. Hopefully, I can adopt one in the near future. I really want a kitty. In other news, I’ve started to get the ropes on my new job as a Test Engineer at Texas Instruments. I’ve been working at home but slowly anticipating when I can slip into the office for like a few hours. I’m two months into the job and my first major product project is about to ramp up. I can’t wait to work on it. While I’ve been waiting for that, I’ve been tasked with looking over a test program for a product and see how it aligns to the datasheet and explain each test. Mix of hardware and software, the way I like it. Been messing with more Vim configuration and GBA decomp stuff in the free time. The more I learn about it, the more I am amazed about the Game Boy Advance. It was really impressive for its features.</summary></entry><entry><title type="html">Hacking in Disassembly</title><link href="https://sethbarberee.github.io/hacking-in-disassembly" rel="alternate" type="text/html" title="Hacking in Disassembly" /><published>2020-06-12T00:00:00+00:00</published><updated>2020-06-12T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Hacking-in-Disassembly</id><content type="html" xml:base="https://sethbarberee.github.io/hacking-in-disassembly">&lt;p&gt;It’s been a fun time this summer. I’ve been messing with the disassemblies of
-Pokemon FireRed and Emerald. I have some basic C knowledge and Assembly
-knowledge so I was able to figure out, for the most part, how the code worked.
-FireRed was harder to change the starters vs Emerald due to having to edit
-Text, Pokemon, and Trainer Parties. I only edited the first battle and didn’t
-update the rest of the game. If I was doing an actual hack, I probably would
-have done that. This mainly took an hour once I figured out what I was doing.&lt;/p&gt;
-
-&lt;h2 id=&quot;pics-or-it-didnt-happen&quot;&gt;Pics or it didn’t happen&lt;/h2&gt;
-&lt;p&gt;Here’s some screenshots where I replaced the
-Kanto Starters with the Johto Starters in FireRed.&lt;/p&gt;
-&lt;div id=&quot;img-container&quot;&gt;
-&lt;img src=&quot;/assets/chikorita_firered.png&quot; alt=&quot;Chikorita Selection&quot; /&gt;  
-&lt;center&gt;&lt;span class=&quot;caption&quot;&gt;Chikorita Selection&lt;/span&gt;&lt;/center&gt;
-
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;!-- Mainly to create a line break --&gt;&lt;/p&gt;
-
-&lt;div id=&quot;img-container&quot;&gt;
-&lt;img src=&quot;/assets/totodile_firered.png&quot; alt=&quot;Totodile Selection&quot; /&gt;  
-&lt;center&gt;&lt;span class=&quot;caption&quot;&gt;Totodile Selection&lt;/span&gt;&lt;/center&gt;
-
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;!-- Mainly to create a line break --&gt;&lt;/p&gt;
-
-&lt;div id=&quot;img-container&quot;&gt;
-&lt;img src=&quot;/assets/cyndaquil_firered.png&quot; alt=&quot;Cyndaquil Selection&quot; /&gt;  
-&lt;center&gt;&lt;span class=&quot;caption&quot;&gt;Cyndaquil Selection&lt;/span&gt;&lt;/center&gt;
-
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;!-- Mainly to create a line break --&gt;&lt;/p&gt;
-
-&lt;div id=&quot;img-container&quot;&gt;
-&lt;img src=&quot;/assets/rival_firered.png&quot; alt=&quot;And once you pick your starter, the first rival battle...&quot; /&gt;  
-&lt;center&gt;&lt;span class=&quot;caption&quot;&gt;And once you pick your starter, the first rival battle...&lt;/span&gt;&lt;/center&gt;
-
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;!-- Mainly to create a line break --&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tutorial&quot;&gt;Tutorial&lt;/h2&gt;
-
-&lt;p&gt;No C Code has to be changed here because it’s all scripting for the Oak
-Pokemon intro. Mainly did a search/replace for each starter i.e
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPECIES_SQUIRTLE&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SPECIES_TOTODILE&lt;/code&gt;. Since these are variables already,
-the game will handle the mon pics, party, and initial battle automatically.&lt;/p&gt;
-
-&lt;p&gt;Change the following in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data/maps/PalletTown_ProfessorOaksLab&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::
-&lt;/span&gt;	lock
-	faceplayer
-	setvar PLAYER_STARTER_NUM, 1
-&lt;span class=&quot;gd&quot;&gt;-       setvar PLAYER_STARTER_SPECIES, SPECIES_SQUIRTLE
--       setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
-&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+       setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE
-+       setvar RIVAL_STARTER_SPECIES, SPECIES_CHIKORITA
-&lt;/span&gt;	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
-	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
-	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
-	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
-	release
-	end
-&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall::
-&lt;/span&gt;	lock
-	faceplayer
-	setvar PLAYER_STARTER_NUM, 0
-&lt;span class=&quot;gd&quot;&gt;-       setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR
--       setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
-&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+       setvar PLAYER_STARTER_SPECIES, SPECIES_CHIKORITA
-+       setvar RIVAL_STARTER_SPECIES, SPECIES_CYNDAQUIL
-&lt;/span&gt;	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
-	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
-	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
-	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
-	release
-	end
-&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;PalletTown_ProfessorOaksLab_EventScript_CharmanderBall::
-&lt;/span&gt;	lock
-	faceplayer
-	setvar PLAYER_STARTER_NUM, 2
-&lt;span class=&quot;gd&quot;&gt;-       setvar PLAYER_STARTER_SPECIES, SPECIES_CHARMANDER
--       setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
-&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+       setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL
-+       setvar RIVAL_STARTER_SPECIES, SPECIES_TOTODILE
-&lt;/span&gt;	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
-	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
-	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
-	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
-	release
-	end
-&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Seth Barberee</name></author><category term="pokeemerald" /><category term="pokefirered" /><summary type="html">It’s been a fun time this summer. I’ve been messing with the disassemblies of Pokemon FireRed and Emerald. I have some basic C knowledge and Assembly knowledge so I was able to figure out, for the most part, how the code worked. FireRed was harder to change the starters vs Emerald due to having to edit Text, Pokemon, and Trainer Parties. I only edited the first battle and didn’t update the rest of the game. If I was doing an actual hack, I probably would have done that. This mainly took an hour once I figured out what I was doing.</summary></entry></feed>
+impressive for its features.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">I’m about two weeks into the new apartment life here in California. Given the rage still of COVID19, I’ve already started the search for a quarantine buddy. Humane Society website has been a great way to end the day of browsing at cats. Hopefully, I can adopt one in the near future. I really want a kitty. In other news, I’ve started to get the ropes on my new job as a Test Engineer at Texas Instruments. I’ve been working at home but slowly anticipating when I can slip into the office for like a few hours. I’m two months into the job and my first major product project is about to ramp up. I can’t wait to work on it. While I’ve been waiting for that, I’ve been tasked with looking over a test program for a product and see how it aligns to the datasheet and explain each test. Mix of hardware and software, the way I like it. Been messing with more Vim configuration and GBA decomp stuff in the free time. The more I learn about it, the more I am amazed about the Game Boy Advance. It was really impressive for its features.</summary></entry></feed>
