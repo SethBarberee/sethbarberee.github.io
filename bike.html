@@ -46,10 +46,19 @@
             attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         });
 
+        // show a marker on the map
+        var sanJose = L.marker({lon: -121.88, lat: 37.337}).bindPopup('San Jose');
+        var santaClara = L.marker({lon: -121.936, lat: 37.353}).bindPopup('Santa Clara Caltrain');
+        var mtv = L.marker({lon: -122.07, lat: 37.39}).bindPopup('Downtown Mountain View');
+
+        var sf = L.marker({lon: -122.3949, lat: 37.7767}).bindPopup('SF 4th and King');
+
+        var cities = L.layerGroup([sanJose, santaClara, mtv, sf]);
+
         var map = L.map('map',  {
             center: [33.337, -121.88],
             zoom: 7,
-            layers: [cyclosm, osm]
+            layers: [cyclosm, osm, cities]
         });
 
         var baseMaps = {
@@ -57,7 +66,11 @@
             "CyclOpenStreetMap": cyclosm
         };
 
-        var layerControl = L.control.layers(baseMaps).addTo(map);
+        var overlayMaps = {
+            "Cities": cities
+        };
+
+        var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         // With the script above, take the string from Strava and then decode it
 
@@ -85,8 +98,6 @@
         // show the scale bar on the lower left corner
         L.control.scale({imperial: true, metric: true}).addTo(map);
 
-        // show a marker on the map
-        L.marker({lon: -121.88, lat: 37.337}).bindPopup('San Jose').addTo(map);
         </script>
     </body>
 </html>
