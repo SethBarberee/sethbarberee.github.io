@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://sethbarberee.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sethbarberee.github.io/" rel="alternate" type="text/html" /><updated>2024-09-19T17:10:08+00:00</updated><id>https://sethbarberee.github.io/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">We do a little homelabbing</title><link href="https://sethbarberee.github.io/we-do-a-little-homelabbing" rel="alternate" type="text/html" title="We do a little homelabbing" /><published>2024-05-17T00:00:00+00:00</published><updated>2024-05-17T00:00:00+00:00</updated><id>https://sethbarberee.github.io/We-do-a-little-homelabbing</id><content type="html" xml:base="https://sethbarberee.github.io/we-do-a-little-homelabbing">&lt;p&gt;I arise from the grave with another post! I have acquired 3x HP ProDesk 405 G5
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://sethbarberee.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sethbarberee.github.io/" rel="alternate" type="text/html" /><updated>2024-09-24T04:06:02+00:00</updated><id>https://sethbarberee.github.io/feed.xml</id><title type="html">Seth Barberee</title><subtitle>Random place on the internet for some random guy's stuff</subtitle><author><name>Seth Barberee</name></author><entry><title type="html">Ridin the Rails</title><link href="https://sethbarberee.github.io/ridin-the-rails" rel="alternate" type="text/html" title="Ridin the Rails" /><published>2024-08-13T00:00:00+00:00</published><updated>2024-08-13T00:00:00+00:00</updated><id>https://sethbarberee.github.io/Ridin-the-Rails</id><content type="html" xml:base="https://sethbarberee.github.io/ridin-the-rails">&lt;p&gt;Huh, would you look at that? Another post has finally dropped. I’m typing this
+on the Amtrak Empire Builder somewhere in Minnesota. I am on a nice two week
+rail vacation where I took the Acela, Cardinal, and the Empire Builder. I will
+still take the Coast Starlight in a few days from Seattle to get back to San
+Jose. In the meantime, let’s catch up, shall we?&lt;/p&gt;
+
+&lt;h2 id=&quot;magwest&quot;&gt;MagWest&lt;/h2&gt;
+
+&lt;p&gt;I was a first time attendee at MagWest last year. I’ve met a lot of friends
+who volunteer at MagWest. It was only a bit of time before I got roped in to
+help. I will be volunteering at the Arcades and the LAN areas. In addition,
+this blogger will be presenting a panel about Pokemon ROM Hacks! Don’t worry,
+reader, I will post a blog transcript/video recording of the panel for your
+enjoyment. I’m excited to talk about all the work that I’ve been doing in this
+area and can’t wait to share it with the world.&lt;/p&gt;
+
+&lt;h2 id=&quot;homelab&quot;&gt;Homelab&lt;/h2&gt;
+
+&lt;p&gt;So, uh, the homelab is turned off. California + High Energy bills = Not good
+for Seth’s wallet. It was a fun learning experience that I might push to
+later. The only thing that I might do in the future is build a NAS to store
+all my media and stream my anime from that. I experimented with Jellyfin and
+used a USB HDD attached to my ASUS Router and was amazed at the success.
+Albeit, the very hot HDD probably wasn’t happy and 4TB isn’t enough for all
+the anime that I would like to watch.&lt;/p&gt;
+
+&lt;h2 id=&quot;train-reviews&quot;&gt;Train Reviews&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Acela - 9/10: OMG, I love how fast I’m flying and Wi-Fi is pretty solid. We
+need more trains like this in the US. 8 hours from Boston to DC is insane.&lt;/li&gt;
+  &lt;li&gt;Cardinal - 7/10: Not too bad, to be honest. 24 hours but only has cafe car.
+The food is fine for shorter trips but you kind of start to hate the cafe
+after 12 hours. The views are pretty solid such as the New River Gorge in West
+Virginia&lt;/li&gt;
+  &lt;li&gt;Empire Builder - 7/10: Pretty good. Mainly, I got tired of the train after
+two days in my seat. Don’t get me wrong that the sights were great and I had a
+nice time to myself on it. Weaving from flat Montana to gorgeous Washington,
+lots of pretty sights.&lt;/li&gt;
+  &lt;li&gt;Coast Starlight - 8/10: Just like I remembered but going south this time
+back home from Seattle to San Jose. Just a single day aboard and we were on
+time to San Jose, so I was pretty pleased.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pokemon-rom-hack&quot;&gt;Pokemon ROM Hack&lt;/h2&gt;
+&lt;p&gt;I’m experimenting with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pokeemerald-expansion&lt;/code&gt; and toying with the idea of
+doing a ROM Hack. I had started one in the past on vanilla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pokeemerald&lt;/code&gt; but
+never brought it to fruition. There is a lot of features that expansion gives
+me from later gens. Even if it never finishes, I still think it will be a lot
+of fun.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><category term="pmd-red" /><category term="homelab" /><summary type="html">Huh, would you look at that? Another post has finally dropped. I’m typing this on the Amtrak Empire Builder somewhere in Minnesota. I am on a nice two week rail vacation where I took the Acela, Cardinal, and the Empire Builder. I will still take the Coast Starlight in a few days from Seattle to get back to San Jose. In the meantime, let’s catch up, shall we?</summary></entry><entry><title type="html">We do a little homelabbing</title><link href="https://sethbarberee.github.io/we-do-a-little-homelabbing" rel="alternate" type="text/html" title="We do a little homelabbing" /><published>2024-05-17T00:00:00+00:00</published><updated>2024-05-17T00:00:00+00:00</updated><id>https://sethbarberee.github.io/We-do-a-little-homelabbing</id><content type="html" xml:base="https://sethbarberee.github.io/we-do-a-little-homelabbing">&lt;p&gt;I arise from the grave with another post! I have acquired 3x HP ProDesk 405 G5
 Minis that I am clustering together with &lt;a href=&quot;https://www.proxmox.com/en/&quot;&gt;Proxmox&lt;/a&gt;. It is definitely a lot of
 learning (and Google searches) to figure things out but the payoff has been
 amazing. I’m able to login with &lt;a href=&quot;https://tailscale.com/&quot;&gt;Tailscale&lt;/a&gt; from anywhere and access my servers
@@ -434,20 +483,4 @@ future tools to read/edit it. PoryDungeon when?&lt;/p&gt;
 
 &lt;p&gt;Aside from that, I did pre-order a Steam Deck so can’t wait to try that out
 and enjoy. COVID seems to drag on here but we keep on going. For me, I’ll keep
-revving through it all as we just saw with my blog.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><category term="pmd-red" /><summary type="html">It’s been a while since I touched this blog. My excuse, Travis CI. I was about to do another post and realized it wouldn’t update. So, I spent like 10 mins moving it from Travis to Github Actions. Turned out nicely and I don’t have to worry about dumb credits. Work has been relentless in keeping me busy but PMD: Red has made some good progress. Here’s a status update:</summary></entry><entry><title type="html">I am still alive</title><link href="https://sethbarberee.github.io/i-am-still-alive" rel="alternate" type="text/html" title="I am still alive" /><published>2021-02-21T00:00:00+00:00</published><updated>2021-02-21T00:00:00+00:00</updated><id>https://sethbarberee.github.io/I-am-still-alive</id><content type="html" xml:base="https://sethbarberee.github.io/i-am-still-alive">&lt;p&gt;Huh, I haven’t really posted much on this blog. It’s been almost a year since
-the last post. Since then, I got my degree in Computer Engineering (mailed to
-me, of course because of COVID) and I’m settling into my job in California.
-I’ve almost finished up my first year in my Test Engineering position and will
-rotate in June to a new position for a year. I don’t have an idea what it will
-be yet however it &lt;em&gt;should&lt;/em&gt; be in California so I won’t have to move again. (I
-really don’t want to move again right when I just did it.) Aside from work,
-I’ve been doing more reverse engineering work on Pokemon Mystery Dungeon: Red
-Rescue Team. In fact, I’m the main contributor behind the work right now. I
-was given collaborator status to the main pret repo so I’ve been hard at work
-pushing the decompilation. (Currently at 6% C Code and 24% symbols documented
-btw) I have a cute cat, Tanner, who snuggles with me and reminds me of the
-good in the world during these hard times. Given that most of my family are in
-Texas and my flaw of never communicating, sometimes my family worry about
-whether I am still alive. I had to respond to my mom today saying that “Yes, I
-am still alive”. Make sure to keep your loved ones in contact. Practice what I
-preach, am I right?&lt;/p&gt;</content><author><name>Seth Barberee</name></author><summary type="html">Huh, I haven’t really posted much on this blog. It’s been almost a year since the last post. Since then, I got my degree in Computer Engineering (mailed to me, of course because of COVID) and I’m settling into my job in California. I’ve almost finished up my first year in my Test Engineering position and will rotate in June to a new position for a year. I don’t have an idea what it will be yet however it should be in California so I won’t have to move again. (I really don’t want to move again right when I just did it.) Aside from work, I’ve been doing more reverse engineering work on Pokemon Mystery Dungeon: Red Rescue Team. In fact, I’m the main contributor behind the work right now. I was given collaborator status to the main pret repo so I’ve been hard at work pushing the decompilation. (Currently at 6% C Code and 24% symbols documented btw) I have a cute cat, Tanner, who snuggles with me and reminds me of the good in the world during these hard times. Given that most of my family are in Texas and my flaw of never communicating, sometimes my family worry about whether I am still alive. I had to respond to my mom today saying that “Yes, I am still alive”. Make sure to keep your loved ones in contact. Practice what I preach, am I right?</summary></entry></feed>
+revving through it all as we just saw with my blog.&lt;/p&gt;</content><author><name>Seth Barberee</name></author><category term="pmd-red" /><summary type="html">It’s been a while since I touched this blog. My excuse, Travis CI. I was about to do another post and realized it wouldn’t update. So, I spent like 10 mins moving it from Travis to Github Actions. Turned out nicely and I don’t have to worry about dumb credits. Work has been relentless in keeping me busy but PMD: Red has made some good progress. Here’s a status update:</summary></entry></feed>
