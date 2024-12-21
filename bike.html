@@ -24,10 +24,12 @@
         margin: 0;
       }
       #map {
-        /* configure the size of the map */
-        width: 100%;
-        height: 100%;
         z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
 
       #legend {
@@ -42,13 +44,20 @@
 
       #legend iframe {
           height: 100%;
+          width: 100%;
+          border: 0;
+          padding-left: 0.5em;
+          box-sizing: border-box;
+      }
+
+     #leaflet-control-scale-line {
+          width: 
       }
 
     </style>
     <title>Seth's eBike Map</title>
   </head>
   <body>
-    <a href="/" | relative_url }}">Home</a>
     <div id="legend" style="width: 300px;">
         <button>❯</button>
         <div class="iframe" style="display: initial;"><iframe src="https://cyclosm.org/legend.html"></iframe></div>
