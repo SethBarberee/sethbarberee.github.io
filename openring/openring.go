@@ -140,6 +140,9 @@ func main() {
 		}
 		items := feed.Items
 		if len(items) > *perSource {
+			sort.Slice(items, func(i, j int) bool {
+				return items[i].Date.After(items[j].Date)
+			})
 			items = items[:*perSource]
 		}
 		base, err := url.Parse(feed.UpdateURL)
