@@ -137,7 +137,9 @@
             })
         // show the scale bar on the lower left corner
         L.control.scale({imperial: true, metric: true}).addTo(map);
-        L.control.locate({drawMarker: false, drawCircle: false}).addTo(map);
+
+        // Add location marker/circle to the map
+        L.control.locate({drawMarker: true, drawCircle: true}).addTo(map);
 
         // This is taken from Cyclosm.org
         // Very detailed comments and easily readable code that I would not have been
