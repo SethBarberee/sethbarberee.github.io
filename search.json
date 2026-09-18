@@ -1,6 +1,14 @@
 [
   
   {
+    "url": "/taking-a-bite-of-the-apple",
+    "title": "Taking a Bite of the Apple",
+    "date": "2026-09-17",
+    "tags": ["job","pmd-red","pmd-sky","homelab"],
+    "excerpt": "[!NOTE]All opinions here are my personal opinions and do not reflect my employer."
+  },
+  
+  {
     "url": "/ridin-the-rails",
     "title": "Ridin the Rails",
     "date": "2024-08-13",
