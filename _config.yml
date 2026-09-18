@@ -5,12 +5,6 @@ description: Random place on the internet for some random guy's stuff
 
 permalink: /:slug
 
-plugins_dir: ./_plugins
-jekyll_get:
-    - data: github
-      json: 'https://api.github.com/users/SethBarberee/repos'
-      cache: false
-
 plugins:
   - jekyll-feed
   - jekyll-soopr-seo-tag
