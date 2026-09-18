@@ -1,0 +1,163 @@
+[
+  
+  {
+    "url": "/ridin-the-rails",
+    "title": "Ridin the Rails",
+    "date": "2024-08-13",
+    "tags": ["pmd-red","homelab"],
+    "excerpt": "Huh, would you look at that? Another post has finally dropped. I’m typing thison the Amtrak Empire Builder somewhere in Minnesota. I am on a nice two weekrail vacation where I took the Acela, Cardinal, and the Empire Builder. I willstill..."
+  },
+  
+  {
+    "url": "/we-do-a-little-homelabbing",
+    "title": "We do a little homelabbing",
+    "date": "2024-05-17",
+    "tags": ["homelab","tailscale","proxmox"],
+    "excerpt": "I arise from the grave with another post! I have acquired 3x HP ProDesk 405 G5Minis that I am clustering together with Proxmox. It is definitely a lot oflearning (and Google searches) to figure things out but the payoff has beenamazing. ..."
+  },
+  
+  {
+    "url": "/building-a-new-framework",
+    "title": "Building a New Framework",
+    "date": "2024-03-15",
+    "tags": ["laptop"],
+    "excerpt": "Framework 13I’ve retiring my Dell XPS 9575 that I got in 2019. You can see more about ithere. I have been watching Framework for a while andfinally pulled the trigger to get a Framework 13 AMD Edition from them. I gotthe DIY Version so I..."
+  },
+  
+  {
+    "url": "/halfway-to-success",
+    "title": "Halfway to Success",
+    "date": "2023-10-23",
+    "tags": ["pmd-red","pokepinballrs"],
+    "excerpt": "eBike TimeMy Lectric XP 3.0 Long Range eBike came in ~1 month ago and I’m loving it sofar. I have 230 miles on it so halfway to a tank of gas on my car. Maximumrange is 60 miles but with pedal assist level 2, I’m getting about 40 mileswh..."
+  },
+  
+  {
+    "url": "/hello-from-somewhere",
+    "title": "Hello From Somewhere",
+    "date": "2023-06-04",
+    "tags": ["pmd-red"],
+    "excerpt": "PMD Red ProgressWe’ve been doing pretty well over at pmd-red. This was taken on master as ofthe date on this blog post. My may-2023 branch has a small 2% bump that Istill need to merge/PR.```c725060 total bytes of code295328 bytes of cod..."
+  },
+  
+  {
+    "url": "/lsp-and-pokemon-decomp",
+    "title": "LSP and Pokemon Decomp",
+    "date": "2023-02-12",
+    "tags": ["lsp","nvim"],
+    "excerpt": "Most people tend to use VS Code for Pokemon decomp and it works very nicely forthem with clangd all set up and tools. However, I’m different. I like to useneovim and just doing clangd normally will give errors. Why? Well, you need togene..."
+  },
+  
+  {
+    "url": "/we-keep-keeping-on",
+    "title": "We keep keeping on",
+    "date": "2022-11-14",
+    "tags": ["pmd-red","tree-sitter-asm"],
+    "excerpt": "Time flies, huh? My last post was… 9 months ago?! Jeez. Maybe I should setan alarm/reminder to make sure I write these. Anyway, I’ve been all over theplace."
+  },
+  
+  {
+    "url": "/jamming-to-a-new-beat",
+    "title": "Jamming to a New Beat",
+    "date": "2022-02-03",
+    "tags": ["mpd","mopidy"],
+    "excerpt": "I’m not a stranger to music. I’ve listened to music for most of my life andeven played it for a few years during the middle school to high school years.I have a very large play time on Spotify because I listen almost everysecond. When I’..."
+  },
+  
+  {
+    "url": "/another-year-still-a-pandemic",
+    "title": "Another Year, Still a Pandemic",
+    "date": "2022-01-01",
+    "tags": [],
+    "excerpt": "Currently in the terminal here at Love Field, with my mask on my face. I’vehad an hour and a half delay so figured I should probably write one of thesesince it’s been a while. My job has kept me busy but that doesn’t mean thatany of my p..."
+  },
+  
+  {
+    "url": "/revving-it-up",
+    "title": "Revving it Up",
+    "date": "2021-07-30",
+    "tags": ["pmd-red"],
+    "excerpt": "It’s been a while since I touched this blog. My excuse, Travis CI. I was aboutto do another post and realized it wouldn’t update. So, I spent like 10 minsmoving it from Travis to Github Actions. Turned out nicely and I don’t have toworry..."
+  },
+  
+  {
+    "url": "/i-am-still-alive",
+    "title": "I am still alive",
+    "date": "2021-02-21",
+    "tags": [],
+    "excerpt": "Huh, I haven’t really posted much on this blog. It’s been almost a year sincethe last post. Since then, I got my degree in Computer Engineering (mailed tome, of course because of COVID) and I’m settling into my job in California.I’ve alm..."
+  },
+  
+  {
+    "url": "/new-apartment-new-life",
+    "title": "New Apartment, New Life",
+    "date": "2020-08-14",
+    "tags": [],
+    "excerpt": "I’m about two weeks into the new apartment life here in California. Given therage still of COVID19, I’ve already started the search for a quarantine buddy.Humane Society website has been a great way to end the day of browsing atcats. Hop..."
+  },
+  
+  {
+    "url": "/hacking-in-disassembly",
+    "title": "Hacking in Disassembly",
+    "date": "2020-06-12",
+    "tags": ["pokeemerald","pokefirered"],
+    "excerpt": "It’s been a fun time this summer. I’ve been messing with the disassemblies ofPokemon FireRed and Emerald. I have some basic C knowledge and Assemblyknowledge so I was able to figure out, for the most part, how the code worked.FireRed was..."
+  },
+  
+  {
+    "url": "/messin-with-ci",
+    "title": "Messin with CI",
+    "date": "2020-05-17",
+    "tags": [],
+    "excerpt": "Now that I got Travis CI set up, I can actually use other plugins that GitHubPages doesn’t support, like paginate-v2. Can’t wait to try them out but it wasa headache since I didn’t know how Travis CI works. Luckily YAML anddocumentation ..."
+  },
+  
+  {
+    "url": "/graduation-amid-pandemic",
+    "title": "Graduation amid Pandemic",
+    "date": "2020-04-26",
+    "tags": [],
+    "excerpt": "With two weeks to go of college amid this pandemic, it’s shocking andinteresting to see how my life is changing. Just 1 month ago, I thought Iwould be moving to California and starting my job in Santa Clara. Yet now, I’mreturning to my o..."
+  },
+  
+  {
+    "url": "/quarantine",
+    "title": "Quarantine",
+    "date": "2020-03-22",
+    "tags": [],
+    "excerpt": "Well, now that I am settling into the quarantine of COVID-19, I guess I shouldcatch up on what is going on with me right now. Besides trying to adjust tothe rest of my semester and basically college career now online, I’ve beentrying to ..."
+  },
+  
+  {
+    "url": "/changing-chapters",
+    "title": "Changing Chapters",
+    "date": "2019-12-15",
+    "tags": [],
+    "excerpt": "I can’t believe how fast 4 years has flown by here at Texas A&amp;M. It seemedlike I just came here in 2016 and now, I’m trying to figure out my career andhouse (hello California). The change is definitely scary but hey, it’ll befine (he..."
+  },
+  
+  {
+    "url": "/new-laptop-new-horizons",
+    "title": "New Laptop, New Horizons (XPS 15 9575)",
+    "date": "2019-07-23",
+    "tags": ["laptop"],
+    "excerpt": "Written on said XPS 15 9575"
+  },
+  
+  {
+    "url": "/vimming-it-up",
+    "title": "Vimming it up",
+    "date": "2018-12-28",
+    "tags": ["vim"],
+    "excerpt": "So Christmas break is happening right now and I don’t have classes to worryabout. That’s amazing that I don’t have to be frantically coding some randomproject that I will probably never use again. What it does mean is that I cando stuff ..."
+  },
+  
+  {
+    "url": "/trying-all-the-things",
+    "title": "Trying all the things",
+    "date": "2018-12-03",
+    "tags": [],
+    "excerpt": "This is mainly to try out the blog feature of Jekyll. I’m slowly learning how this works so bear in mind as this is also my first post. So with that said, I hope to write more posts in the future with more entertaining things such as cur..."
+  }
+  
+]
