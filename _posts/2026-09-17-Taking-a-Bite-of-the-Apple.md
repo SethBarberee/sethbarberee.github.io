@@ -6,8 +6,8 @@ toc: true
 tags: [job, pmd-red, pmd-sky, homelab]
 ---
 
-[!NOTE]
-All opinions here are my personal opinions and do not reflect my employer.
+> [!NOTE]
+> All opinions here are my personal opinions and do not reflect my employer.
 
 And now, with that out of the way. Yeah, I work at Apple now. But let's walk
 through what's happened through the gap in posts.
