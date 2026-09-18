@@ -1,15 +1,15 @@
 name: Build Post
 
-on: 
+on:
     push:
         branches: [ pre-deploy ]
-    
+
 jobs:
     workflow:
         name: Build the Blog Pages
         runs-on: ubuntu-latest
 
-        steps:    
+        steps:
 
           - name: Setup Go
             uses: actions/setup-go@v4
@@ -25,7 +25,7 @@ jobs:
             uses: actions/checkout@v3
 
           - name: Checkout openring
-            run: git clone https://git.sr.ht/~sircmpwn/openring 
+            run: git clone https://git.sr.ht/~sircmpwn/openring
 
           - name: Build openring
             run: |
@@ -34,9 +34,6 @@ jobs:
 
           - name: Generate openring posts
             run: ./openring/openring -s https://www.supergoodcode.com/feed.xml -s https://emersion.fr/blog/atom.xml -s https://drewdevault.com/blog/index.xml < in.html > _includes/openring.html
-
-          - name: Build tags
-            run: python _plugins/compile_tags.py 
 
           - name: 🔨 install dependencies & build site
             uses: limjh16/jekyll-action-ts@v2
